@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/Floaty_board_design/ip/Floaty_board_design_axi_timer_0_0/sim/Floaty_board_design_axi_timer_0_0.vhd" \
+"../../../bd/Floaty_board_design/ip/Floaty_board_design_rst_ps7_0_50M_0/sim/Floaty_board_design_rst_ps7_0_50M_0.vhd" \
+"../../../bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/sim/Floaty_board_design_axi_gpio_0_0.vhd" \
+"../../../bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/sim/Floaty_board_design_axi_gpio_1_0.vhd" \
+"../../../bd/Floaty_board_design/sim/Floaty_board_design.vhd" \
+
+nosort
