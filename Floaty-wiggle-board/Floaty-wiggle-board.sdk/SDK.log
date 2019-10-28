@@ -11,3 +11,31 @@
 09:03:10 INFO  : Registering command handlers for SDK TCF services
 09:03:10 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
 09:03:11 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.
+16:11:27 INFO  : Registering command handlers for SDK TCF services
+16:11:29 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\Fontys\ES\adv_emb\git\floaty-wiggle-board\Floaty-wiggle-board\Floaty-wiggle-board.sdk\temp_xsdb_launch_script.tcl
+16:11:33 INFO  : XSCT server has started successfully.
+16:11:33 INFO  : Successfully done setting XSCT server connection channel  
+16:11:36 INFO  : Successfully done setting SDK workspace  
+16:11:36 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+16:11:36 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.
+16:11:43 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1572274616688,  Project:1571319570998
+16:11:43 INFO  : The hardware specification for project 'Floaty_board_design_wrapper_hw_platform_0' is different from D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+16:11:44 INFO  : Copied contents of D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf into \Floaty_board_design_wrapper_hw_platform_0\system.hdf.
+16:11:48 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:11:48 INFO  : Clearing existing target manager status.
+16:11:48 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:11:48 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+17:23:39 INFO  : Registering command handlers for SDK TCF services
+17:23:40 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\Fontys\ES\adv_emb\git\floaty-wiggle-board\Floaty-wiggle-board\Floaty-wiggle-board.sdk\temp_xsdb_launch_script.tcl
+17:23:45 INFO  : XSCT server has started successfully.
+17:23:46 INFO  : Successfully done setting XSCT server connection channel  
+17:23:47 INFO  : Successfully done setting SDK workspace  
+17:23:47 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+17:23:47 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.
+19:01:21 INFO  : Registering command handlers for SDK TCF services
+19:01:23 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\Fontys\ES\adv_emb\git\floaty-wiggle-board\Floaty-wiggle-board\Floaty-wiggle-board.sdk\temp_xsdb_launch_script.tcl
+19:01:30 INFO  : XSCT server has started successfully.
+19:01:30 INFO  : Successfully done setting XSCT server connection channel  
+19:01:31 INFO  : Successfully done setting SDK workspace  
+19:01:31 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+19:01:31 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.

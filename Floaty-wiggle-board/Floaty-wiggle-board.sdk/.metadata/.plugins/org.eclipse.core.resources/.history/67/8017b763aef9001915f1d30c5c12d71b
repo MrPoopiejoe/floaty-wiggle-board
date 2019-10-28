@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 21, 2019
+ *      Author: PoopieJoe
+ */
+
+typedef enum
+{
+	setup_succes 	= 0x0,
+	setup_fail 		= 0x1
+}setup_status_t;
+
+typedef enum
+{
+	program_succes 			= 0x0,
+	program_generic_unknown	= 0x10,
+	program_sensor_unknown	= 0x20,
+	program_math_unknown	= 0x30,
+	program_serial_unknown	= 0x40
+}program_status_t;
+
+setup_status_t setup()
+{
+	return setup_succes;
+};
+
+int main()
+{
+	return 0;
+}

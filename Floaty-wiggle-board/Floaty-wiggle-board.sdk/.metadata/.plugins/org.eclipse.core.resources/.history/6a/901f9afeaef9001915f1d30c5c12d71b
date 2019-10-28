@@ -1,0 +1,18 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 21, 2019
+ *      Author: PoopieJoe
+ */
+
+#include "errorcodes.h"
+
+setup_status_t setup()
+{
+	return setup_succes;
+};
+
+int main()
+{
+	return 0;
+}

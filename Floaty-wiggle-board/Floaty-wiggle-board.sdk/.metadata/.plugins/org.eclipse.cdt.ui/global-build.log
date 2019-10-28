@@ -38,3 +38,664 @@ arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
   19016	   1144	  22568	  42728	   a6e8	odometry.elf
 'Finished building: odometry.elf.size'
 ' '
+17:43:41 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19016	   1144	  22568	  42728	   a6e8	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:05:13 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:10:20: error: expected ',' or '}' before ';' token
+  setup_succes = 0x0;
+                    ^
+../src/main.c: In function 'setup':
+../src/main.c:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+ };
+ ^
+make: *** [src/main.o] Error 1
+19:05:18 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setup':
+../src/main.c:17:1: warning: control reaches end of non-void function [-Wreturn-type]
+ };
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:05:35 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:07:19 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:17:1: error: empty enum is invalid
+ }program_status_t;
+ ^
+make: *** [src/main.o] Error 1
+19:10:50 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:11:40 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:26:1: error: empty enum is invalid
+ };
+ ^
+make: *** [src/main.o] Error 1
+19:13:23 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:13:53 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:14:05 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:14:32 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:14:48 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+19:15:08 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:8:10: fatal error: errorcodes.h: No such file or directory
+ #include "errorcodes.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+19:15:16 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:8:10: fatal error: hdr/errorcodes.h: No such file or directory
+ #include "hdr/errorcodes.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+19:15:39 **** Clean-only build of configuration Debug for project odometry ****
+make clean 
+rm -rf  ./src/main.o  ./src/main.d  odometry.elf.size  odometry.elf
+' '
+19:15:40 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:10:16: error: redefinition of 'setup'
+ setup_status_t setup()
+                ^~~~~
+In file included from ../src/main.c:8:0:
+../src/hdr/errorcodes.h:33:16: note: previous definition of 'setup' was here
+ setup_status_t setup()
+                ^~~~~
+make: *** [src/main.o] Error 1
+19:15:53 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:8:10: fatal error: errorcodes.h: No such file or directory
+ #include "errorcodes.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+19:16:00 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:10:16: error: redefinition of 'setup'
+ setup_status_t setup()
+                ^~~~~
+In file included from ../src/main.c:8:0:
+../src/hdr/errorcodes.h:33:16: note: previous definition of 'setup' was here
+ setup_status_t setup()
+                ^~~~~
+make: *** [src/main.o] Error 1
+19:16:29 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:25:56 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:0:
+../src/hdr/errorcodes.h:33:2: error: redeclaration of enumerator 'unknown'
+  unknown = 0x0,
+  ^~~~~~~
+../src/hdr/errorcodes.h:28:2: note: previous definition of 'unknown' was here
+  unknown = 0x0
+  ^~~~~~~
+make: *** [src/main.o] Error 1
+19:27:13 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:28:32 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:29:17 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:35:39 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:37:39 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:0:
+../src/hdr/errorcodes.h:19:20: error: 'program_err_succes' undeclared here (not in a function)
+  err_succes      = program_err_succes,
+                    ^~~~~~~~~~~~~~~~~~
+../src/hdr/errorcodes.h:20:26: error: 'program_err_generic' undeclared here (not in a function); did you mean 'program_err_succes'?
+  err_generic_unknown   = program_err_generic,
+                          ^~~~~~~~~~~~~~~~~~~
+                          program_err_succes
+../src/hdr/errorcodes.h:21:25: error: 'program_err_sensor' undeclared here (not in a function); did you mean 'program_err_generic'?
+  err_sensor_unknown   = program_err_sensor | 0x00,
+                         ^~~~~~~~~~~~~~~~~~
+                         program_err_generic
+make: *** [src/main.o] Error 1
+19:37:57 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:39:40 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:39:48 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:40:38 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:42:14 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:49:10 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+19:59:53 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+20:00:30 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'setup':
+../src/main.c:13:6: error: 'false' undeclared (first use in this function)
+  if (false) return setup_sensor_fail;
+      ^~~~~
+../src/main.c:13:6: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+20:01:26 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19044	   1144	  22568	  42756	   a704	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+20:03:27 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:19: warning: unused variable 'program_status' [-Wunused-variable]
+  program_status_t program_status = err_succes;
+                   ^~~~~~~~~~~~~~
+../src/main.c:23:17: warning: unused variable 'setup_status' [-Wunused-variable]
+  setup_status_t setup_status = setup();
+                 ^~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19064	   1144	  22568	  42776	   a718	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+20:08:34 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:19: warning: unused variable 'program_status' [-Wunused-variable]
+  program_status_t program_status = err_succes;
+                   ^~~~~~~~~~~~~~
+../src/main.c:23:17: warning: unused variable 'setup_status' [-Wunused-variable]
+  setup_status_t setup_status = setup();
+                 ^~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19064	   1144	  22568	  42776	   a718	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+20:09:40 **** Incremental Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:22:54 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:23:2: error: unknown type name 'uint8_t'
+  uint8_t running = 1;
+  ^~~~~~~
+../src/main.c:24:19: warning: unused variable 'program_status' [-Wunused-variable]
+  program_status_t program_status = err_succes;
+                   ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+20:23:35 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:19: warning: unused variable 'program_status' [-Wunused-variable]
+  program_status_t program_status = err_succes;
+                   ^~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19112	   1144	  22568	  42824	   a748	odometry.elf
+'Finished building: odometry.elf.size'
+' '
+20:23:56 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:24:19: warning: unused variable 'program_status' [-Wunused-variable]
+  program_status_t program_status = err_succes;
+                   ^~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_bsp/ps7_cortexa9_0/lib -o "odometry.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry.elf  |tee "odometry.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19104	   1144	  22568	  42816	   a740	odometry.elf
+'Finished building: odometry.elf.size'
+' '
