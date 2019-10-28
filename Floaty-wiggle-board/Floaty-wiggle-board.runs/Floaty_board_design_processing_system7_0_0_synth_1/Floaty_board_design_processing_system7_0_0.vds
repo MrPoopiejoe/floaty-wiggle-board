@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Oct 17 15:34:27 2019
-# Process ID: 10424
+# Start of session at: Mon Oct 28 15:53:22 2019
+# Process ID: 5560
 # Current directory: D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_processing_system7_0_0_synth_1
 # Command line: vivado.exe -log Floaty_board_design_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_processing_system7_0_0.tcl
 # Log file: D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_processing_system7_0_0_synth_1/Floaty_board_design_processing_system7_0_0.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7776 
+INFO: Helper process launched with PID 1824 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 414.867 ; gain = 100.531
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 416.301 ; gain = 102.039
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Floaty_board_design_processing_system7_0_0' [d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_processing_system7_0_0/synth/Floaty_board_design_processing_system7_0_0.v:60]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
@@ -168,7 +168,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 470.328 ; gain = 155.992
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 471.207 ; gain = 156.945
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -181,10 +181,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 470.328 ; gain = 155.992
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 471.207 ; gain = 156.945
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 470.328 ; gain = 155.992
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 471.207 ; gain = 156.945
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -202,26 +202,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 729.715 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 730.176 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 729.715 ; gain = 415.379
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 730.176 ; gain = 415.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 729.715 ; gain = 415.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 730.176 ; gain = 415.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 729.715 ; gain = 415.379
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 730.176 ; gain = 415.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 729.715 ; gain = 415.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 730.176 ; gain = 415.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -279,7 +279,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 729.715 ; gain = 415.379
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 730.176 ; gain = 415.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,13 +291,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 938.711 ; gain = 624.375
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 937.367 ; gain = 623.105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,7 +309,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,7 +333,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -346,7 +346,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -358,25 +358,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -406,11 +406,11 @@ Report Instance Areas:
 |2     |  inst   |processing_system7_v5_5_processing_system7 |   244|
 +------+---------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:44 . Memory (MB): peak = 957.305 ; gain = 643.043
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 958.684 ; gain = 384.961
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 958.684 ; gain = 644.348
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:30 . Memory (MB): peak = 957.305 ; gain = 384.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 957.305 ; gain = 643.043
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -420,12 +420,12 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 23 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 973.324 ; gain = 666.199
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 972.129 ; gain = 665.078
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_processing_system7_0_0_synth_1/Floaty_board_design_processing_system7_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_processing_system7_0_0/Floaty_board_design_processing_system7_0_0.xci
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_processing_system7_0_0_synth_1/Floaty_board_design_processing_system7_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Floaty_board_design_processing_system7_0_0_utilization_synth.rpt -pb Floaty_board_design_processing_system7_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 973.324 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Oct 17 15:35:19 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 972.129 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 28 15:54:29 2019...

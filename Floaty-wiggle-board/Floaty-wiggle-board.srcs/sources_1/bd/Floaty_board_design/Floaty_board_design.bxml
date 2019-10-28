@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="Floaty_board_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1571319258"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1571319258"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1571319258"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1571319258"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1572274394"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1572274394"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1572274394"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1572274394"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\Floaty_board_design_processing_system7_0_0\Floaty_board_design_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -71,6 +71,14 @@
       <File Name="sim\Floaty_board_design.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\Floaty_board_design_axi_iic_0_0\Floaty_board_design_axi_iic_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_iic_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\Floaty_board_design_auto_pc_0\Floaty_board_design_auto_pc_0.xci" Type="IP">

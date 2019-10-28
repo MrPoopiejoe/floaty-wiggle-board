@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Thu Oct 17 15:37:06 2019
+-- Date        : Thu Oct 17 15:37:05 2019
 -- Host        : Lenovo-PC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_auto_pc_0/Floaty_board_design_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top Floaty_board_design_auto_pc_0 -prefix
+--               Floaty_board_design_auto_pc_0_ Floaty_board_design_auto_pc_0_stub.vhdl
 -- Design      : Floaty_board_design_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

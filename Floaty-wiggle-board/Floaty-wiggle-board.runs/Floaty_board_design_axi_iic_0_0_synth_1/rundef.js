@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log Floaty_board_design_auto_pc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_auto_pc_0.tcl" );
+         "-log Floaty_board_design_axi_iic_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_axi_iic_0_0.tcl" );
 
 
 

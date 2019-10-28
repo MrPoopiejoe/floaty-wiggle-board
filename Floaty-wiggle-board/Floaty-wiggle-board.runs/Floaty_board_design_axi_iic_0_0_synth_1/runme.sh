@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_auto_pc_0_synth_1'
+HD_PWD='D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_axi_iic_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Floaty_board_design_auto_pc_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_auto_pc_0.tcl
+EAStep vivado -log Floaty_board_design_axi_iic_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_axi_iic_0_0.tcl

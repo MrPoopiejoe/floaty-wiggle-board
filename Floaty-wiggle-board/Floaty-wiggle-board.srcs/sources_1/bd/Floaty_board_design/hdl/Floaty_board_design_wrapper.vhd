@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Thu Oct 17 15:33:57 2019
+--Date        : Mon Oct 28 15:52:50 2019
 --Host        : Lenovo-PC running 64-bit major release  (build 9200)
 --Command     : generate_target Floaty_board_design_wrapper.bd
 --Design      : Floaty_board_design_wrapper
@@ -35,6 +35,8 @@ entity Floaty_board_design_wrapper is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    hdmi_in_ddc_scl_io : inout STD_LOGIC;
+    hdmi_in_ddc_sda_io : inout STD_LOGIC;
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
 end Floaty_board_design_wrapper;
@@ -64,9 +66,29 @@ architecture STRUCTURE of Floaty_board_design_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     btns_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    hdmi_in_ddc_scl_i : in STD_LOGIC;
+    hdmi_in_ddc_scl_o : out STD_LOGIC;
+    hdmi_in_ddc_scl_t : out STD_LOGIC;
+    hdmi_in_ddc_sda_i : in STD_LOGIC;
+    hdmi_in_ddc_sda_o : out STD_LOGIC;
+    hdmi_in_ddc_sda_t : out STD_LOGIC
   );
   end component Floaty_board_design;
+  component IOBUF is
+  port (
+    I : in STD_LOGIC;
+    O : out STD_LOGIC;
+    T : in STD_LOGIC;
+    IO : inout STD_LOGIC
+  );
+  end component IOBUF;
+  signal hdmi_in_ddc_scl_i : STD_LOGIC;
+  signal hdmi_in_ddc_scl_o : STD_LOGIC;
+  signal hdmi_in_ddc_scl_t : STD_LOGIC;
+  signal hdmi_in_ddc_sda_i : STD_LOGIC;
+  signal hdmi_in_ddc_sda_o : STD_LOGIC;
+  signal hdmi_in_ddc_sda_t : STD_LOGIC;
 begin
 Floaty_board_design_i: component Floaty_board_design
      port map (
@@ -92,6 +114,26 @@ Floaty_board_design_i: component Floaty_board_design
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
       btns_4bits_tri_i(3 downto 0) => btns_4bits_tri_i(3 downto 0),
+      hdmi_in_ddc_scl_i => hdmi_in_ddc_scl_i,
+      hdmi_in_ddc_scl_o => hdmi_in_ddc_scl_o,
+      hdmi_in_ddc_scl_t => hdmi_in_ddc_scl_t,
+      hdmi_in_ddc_sda_i => hdmi_in_ddc_sda_i,
+      hdmi_in_ddc_sda_o => hdmi_in_ddc_sda_o,
+      hdmi_in_ddc_sda_t => hdmi_in_ddc_sda_t,
       leds_4bits_tri_o(3 downto 0) => leds_4bits_tri_o(3 downto 0)
+    );
+hdmi_in_ddc_scl_iobuf: component IOBUF
+     port map (
+      I => hdmi_in_ddc_scl_o,
+      IO => hdmi_in_ddc_scl_io,
+      O => hdmi_in_ddc_scl_i,
+      T => hdmi_in_ddc_scl_t
+    );
+hdmi_in_ddc_sda_iobuf: component IOBUF
+     port map (
+      I => hdmi_in_ddc_sda_o,
+      IO => hdmi_in_ddc_sda_io,
+      O => hdmi_in_ddc_sda_i,
+      T => hdmi_in_ddc_sda_t
     );
 end STRUCTURE;

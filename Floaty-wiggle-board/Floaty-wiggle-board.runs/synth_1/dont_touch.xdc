@@ -25,6 +25,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Floaty_board_de
 # IP: bd/Floaty_board_design/ip/Floaty_board_design_xbar_0/Floaty_board_design_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Floaty_board_design_xbar_0 || ORIG_REF_NAME==Floaty_board_design_xbar_0} -quiet] -quiet
 
+# IP: bd/Floaty_board_design/ip/Floaty_board_design_axi_iic_0_0/Floaty_board_design_axi_iic_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Floaty_board_design_axi_iic_0_0 || ORIG_REF_NAME==Floaty_board_design_axi_iic_0_0} -quiet] -quiet
+
 # IP: bd/Floaty_board_design/ip/Floaty_board_design_auto_pc_0/Floaty_board_design_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==Floaty_board_design_auto_pc_0 || ORIG_REF_NAME==Floaty_board_design_auto_pc_0} -quiet] -quiet
 
