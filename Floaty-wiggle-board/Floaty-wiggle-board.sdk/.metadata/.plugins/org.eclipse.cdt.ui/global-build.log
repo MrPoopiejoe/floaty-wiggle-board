@@ -1,0 +1,702 @@
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+12:04:45 **** Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19352	   1144	  22568	  43064	   a838	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+12:04:55 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:07:53 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:10:08 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:57:5: error: too many arguments to function 'print'
+     print("Hello World %d\n\r", a);
+     ^~~~~
+In file included from ../src/helloworld.c:50:0:
+../../FWB_software_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/helloworld.o] Error 1
+12:10:33 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22060	   1144	  22568	  45772	   b2cc	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+12:45:48 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:64:16: error: expected identifier or '(' before '=' token
+ const uint16_t = PREFIX 0xCAFE;/*
+                ^
+make: *** [src/helloworld.o] Error 1
+12:46:01 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:66:1: error: two or more data types in declaration specifiers
+ int send_cords(cords_t *cords_p)
+ ^~~
+../src/helloworld.c:70:3: error: expected identifier or '(' before '/' token
+ }*/
+   ^
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:70:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }*/
+ ^
+make: *** [src/helloworld.o] Error 1
+12:46:10 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22252	   1144	  22568	  45964	   b38c	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+12:46:16 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:46:46 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22252	   1144	  22568	  45964	   b38c	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+12:46:51 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+12:47:14 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22252	   1144	  22568	  45964	   b38c	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+12:51:41 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:70:15: error: 'PERFIX' undeclared (first use in this function); did you mean 'PREFIX'?
+  memcpy(data, PERFIX, sizeof(PREFIX));
+               ^~~~~~
+               PREFIX
+../src/helloworld.c:70:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+12:52:00 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:71:15: error: 'PERFIX' undeclared (first use in this function); did you mean 'PREFIX'?
+  memcpy(data, PERFIX, sizeof(PREFIX));
+               ^~~~~~
+               PREFIX
+../src/helloworld.c:71:15: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+12:52:08 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:71:16: error: 'PERFIX' undeclared (first use in this function); did you mean 'PREFIX'?
+  memcpy(data, &PERFIX, sizeof(PREFIX));
+                ^~~~~~
+                PREFIX
+../src/helloworld.c:71:16: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:74:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+12:54:18 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:75:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23856	   1144	  22568	  47568	   b9d0	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+12:54:27 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23856	   1144	  22568	  47568	   b9d0	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:03:18 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23924	   1144	  22568	  47636	   ba14	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:03:27 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:08:19 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23988	   1144	  22568	  47700	   ba54	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:08:25 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:09:28 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23968	   1144	  22568	  47680	   ba40	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:09:35 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:10:22 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:82:17: error: stray '\' in program
+  xil_printf("\n"\r");
+                 ^
+../src/helloworld.c:82:18: error: expected ')' before 'r'
+  xil_printf("\n"\r");
+                  ^
+../src/helloworld.c:82:19: warning: missing terminating " character
+  xil_printf("\n"\r");
+                   ^
+../src/helloworld.c:82:19: error: missing terminating " character
+  xil_printf("\n"\r");
+                   ^~~
+../src/helloworld.c:85:1: error: expected ';' before '}' token
+ }
+ ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:85:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+13:10:28 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:82:17: error: stray '\' in program
+  xil_printf("\n"\r");
+                 ^
+../src/helloworld.c:82:18: error: expected ')' before 'r'
+  xil_printf("\n"\r");
+                  ^
+../src/helloworld.c:82:19: warning: missing terminating " character
+  xil_printf("\n"\r");
+                   ^
+../src/helloworld.c:82:19: error: missing terminating " character
+  xil_printf("\n"\r");
+                   ^~~
+../src/helloworld.c:85:1: error: expected ';' before '}' token
+ }
+ ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:85:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+13:11:06 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23968	   1144	  22568	  47680	   ba40	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:11:11 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:82:17: error: stray '\' in program
+  xil_printf("\n"\r");
+                 ^
+../src/helloworld.c:82:18: error: expected ')' before 'r'
+  xil_printf("\n"\r");
+                  ^
+../src/helloworld.c:82:19: warning: missing terminating " character
+  xil_printf("\n"\r");
+                   ^
+../src/helloworld.c:82:19: error: missing terminating " character
+  xil_printf("\n"\r");
+                   ^~~
+../src/helloworld.c:84:1: error: expected ';' before '}' token
+ }
+ ^
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/helloworld.o] Error 1
+13:11:23 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:82:24: error: 'i' undeclared (first use in this function)
+  xil_printf("%x", data[i]);
+                        ^
+../src/helloworld.c:82:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+make: *** [src/helloworld.o] Error 1
+13:11:33 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:82:24: error: 'i' undeclared (first use in this function)
+  xil_printf("%x", data[i]);
+                        ^
+../src/helloworld.c:82:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+make: *** [src/helloworld.o] Error 1
+13:11:37 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23968	   1144	  22568	  47680	   ba40	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:11:52 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:88:9: warning: unused variable 'a' [-Wunused-variable]
+     int a = 0;
+         ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23972	   1144	  22568	  47684	   ba44	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:12:00 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23972	   1144	  22568	  47684	   ba44	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:12:06 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:13:17 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23976	   1144	  22568	  47688	   ba48	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:13:21 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23976	   1144	  22568	  47688	   ba48	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:13:28 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+13:14:10 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'send_cords':
+../src/helloworld.c:74:2: error: expected ';' before 'memcpy'
+  memcpy(data+sizeof(PREFIX), cords_p, sizeof(cords_t));
+  ^~~~~~
+make: *** [src/helloworld.o] Error 1
+13:14:42 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24040	   1144	  22568	  47752	   ba88	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:14:47 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24040	   1144	  22568	  47752	   ba88	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+13:14:55 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:47:58 **** Auto Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../FWB_software_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: FWB_software.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../FWB_software_bsp/ps7_cortexa9_0/lib -o "FWB_software.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FWB_software.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size FWB_software.elf  |tee "FWB_software.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22444	   1144	  22568	  46156	   b44c	FWB_software.elf
+'Finished building: FWB_software.elf.size'
+' '
+14:48:07 **** Incremental Build of configuration Debug for project FWB_software ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
