@@ -67,3 +67,18 @@
 15:56:35 INFO  : Clearing existing target manager status.
 15:56:35 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 15:56:35 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:40:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1572363547720,  Project:1572360887765
+16:40:01 INFO  : Project Floaty_board_design_wrapper_hw_platform_0's source hardware specification located at D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+16:40:17 INFO  : Copied contents of D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf into \Floaty_board_design_wrapper_hw_platform_0\system.hdf.
+16:40:21 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:40:21 INFO  : Clearing existing target manager status.
+16:40:21 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:40:21 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:40:46 INFO  : Registering command handlers for SDK TCF services
+16:40:47 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\Fontys\ES\adv_emb\git\floaty-wiggle-board\Floaty-wiggle-board\Floaty-wiggle-board.sdk\temp_xsdb_launch_script.tcl
+16:40:50 INFO  : XSCT server has started successfully.
+16:40:50 INFO  : Successfully done setting XSCT server connection channel  
+16:40:51 INFO  : Successfully done setting SDK workspace  
+16:40:51 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+16:40:51 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.
