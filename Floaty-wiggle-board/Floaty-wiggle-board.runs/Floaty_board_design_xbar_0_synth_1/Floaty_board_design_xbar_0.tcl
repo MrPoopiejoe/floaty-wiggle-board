@@ -35,7 +35,6 @@ set_property ip_repo_paths d:/Documents/Fontys/ES/adv_emb/blokkies [current_proj
 set_property ip_output_repo d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_xbar_0/Floaty_board_design_xbar_0.xci
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_xbar_0/Floaty_board_design_xbar_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -45,8 +44,6 @@ set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc dont_touch.xdc
-set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 0
 
 set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/Floaty_board_design_xbar_0_synth_1 -new_name Floaty_board_design_xbar_0 -ip [get_ips Floaty_board_design_xbar_0]]

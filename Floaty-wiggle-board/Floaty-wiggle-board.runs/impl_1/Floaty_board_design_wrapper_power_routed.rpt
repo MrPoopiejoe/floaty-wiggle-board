@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Oct 28 15:56:38 2019
+| Date             : Tue Oct 29 15:51:35 2019
 | Host             : Lenovo-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file Floaty_board_design_wrapper_power_routed.rpt -pb Floaty_board_design_wrapper_power_summary_routed.pb -rpx Floaty_board_design_wrapper_power_routed.rpx
 | Design           : Floaty_board_design_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |     0.003 |        3 |       --- |             --- |
-| Slice Logic             |     0.002 |     3573 |       --- |             --- |
-|   LUT as Logic          |     0.001 |     1314 |     17600 |            7.47 |
+| Slice Logic             |     0.002 |     3588 |       --- |             --- |
+|   LUT as Logic          |     0.001 |     1329 |     17600 |            7.55 |
 |   CARRY4                |    <0.001 |       77 |      4400 |            1.75 |
 |   Register              |    <0.001 |     1517 |     35200 |            4.31 |
 |   LUT as Shift Register |    <0.001 |       72 |      6000 |            1.20 |
 |   F7/F8 Muxes           |    <0.001 |       13 |     17600 |            0.07 |
 |   Others                |     0.000 |      290 |       --- |             --- |
-| Signals                 |     0.002 |     2537 |       --- |             --- |
+| Signals                 |     0.002 |     2546 |       --- |             --- |
 | I/O                     |    <0.001 |       10 |       100 |           10.00 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.117 |          |           |                 |
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.007 |      0.007 |
+| Vccint    |       1.000 |     0.014 |       0.007 |      0.007 |
 | Vccaux    |       1.800 |     0.008 |       0.000 |      0.008 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -197,18 +197,18 @@ Table of Contents
 |         AXI4_LITE_I                                                         |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                |    <0.001 |
 |             I_DECODER                                                       |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|               MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I |    <0.001 |
-|         TC_CORE_I                                                           |     0.001 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[0].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[2].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[4].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[5].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[6].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|               MEM_DECODE_GEN[0].PER_CE_GEN[7].MULTIPLE_CES_THIS_CS_GEN.CE_I |     0.000 |
+|         TC_CORE_I                                                           |     0.002 |
 |           COUNTER_0_I                                                       |    <0.001 |
 |             COUNTER_I                                                       |    <0.001 |
 |           GEN_SECOND_TIMER.COUNTER_1_I                                      |    <0.001 |
 |             COUNTER_I                                                       |    <0.001 |
-|           READ_MUX_I                                                        |    <0.001 |
+|           READ_MUX_I                                                        |     0.000 |
 |           TIMER_CONTROL_I                                                   |    <0.001 |
 |             INPUT_DOUBLE_REGS                                               |    <0.001 |
 |             INPUT_DOUBLE_REGS2                                              |    <0.001 |
@@ -216,10 +216,10 @@ Table of Contents
 |     processing_system7_0                                                    |     1.399 |
 |       inst                                                                  |     1.399 |
 |     ps7_0_axi_periph                                                        |     0.003 |
-|       s00_couplers                                                          |     0.002 |
-|         auto_pc                                                             |     0.002 |
-|           inst                                                              |     0.002 |
-|             gen_axilite.gen_b2s_conv.axilite_b2s                            |     0.002 |
+|       s00_couplers                                                          |     0.003 |
+|         auto_pc                                                             |     0.003 |
+|           inst                                                              |     0.003 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s                            |     0.003 |
 |               RD.ar_channel_0                                               |    <0.001 |
 |                 ar_cmd_fsm_0                                                |    <0.001 |
 |                 cmd_translator_0                                            |    <0.001 |

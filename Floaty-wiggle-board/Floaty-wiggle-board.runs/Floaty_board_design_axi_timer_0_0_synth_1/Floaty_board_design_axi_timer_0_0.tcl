@@ -31,6 +31,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
+set_property ip_repo_paths d:/Documents/Fontys/ES/adv_emb/blokkies [current_project]
 set_property ip_output_repo d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_timer_0_0/Floaty_board_design_axi_timer_0_0.xci
