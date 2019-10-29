@@ -865,6 +865,7 @@
 <includePath path="d:\programs\xilinx-vivado\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include"/>
 <includePath path="#undef __ARM_FEATURE_SIMD32" removed="true"/>
 <includePath path="d:\programs\xilinx-vivado\sdk\2018.2\gnu\aarch32\nt\gcc-arm-none-eabi\bin\../arm-none-eabi/libc/usr/include"/>
+<includePath path="#undef __THUMBEL__" removed="true"/>
 <includePath path="#undef __thumb2__" removed="true"/>
 <includePath path="#undef __thumb__" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>

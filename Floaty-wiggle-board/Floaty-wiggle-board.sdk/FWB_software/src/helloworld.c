@@ -52,6 +52,14 @@
 #include "xil_printf.h"
 #include "sleep.h"
 
+#include "xil_types.h"
+#include "xil_assert.h"
+#include "xparameters.h"
+#include "bspconfig.h"
+
+#define LITTLE_ENDIAN 1 //Places data in little endian format
+
+
 typedef struct{
 	float x;
 	float y;
@@ -62,39 +70,59 @@ typedef struct{
 	axis_t pos;
 	axis_t rot;
 }cords_t;
+//0xD0 0xD0 0xCA 0xFE
+const unsigned int PREFIX = 0xD0D0CAFE;
 
-const uint16_t PREFIX = 0xCAFE;
 
+void send_data(uint8_t * data, uint16_t len)
+{
+	for(uint16_t i = 0; i < len; i++)
+	{
+		outbyte(data[i]);
+	}
 
+}
 int send_cords(cords_t *cords_p)
 {
-	char data[sizeof(PREFIX)+sizeof(cords_t)];
-	//memcpy(data, &PREFIX, sizeof(PREFIX));
-	data[0] = 0xCA;
-	data[1] = 0xFE;
-	//memcpy(data+sizeof(PREFIX), cords_p, sizeof(cords_t));
-	for(int i = sizeof(PREFIX); i<sizeof(PREFIX)+sizeof(cords_t); i++)
-	{
-		data[i] = i-sizeof(PREFIX);
-	};
-	for(int i = 0; i < sizeof(PREFIX)+sizeof(cords_t); i+=2)
-	{
-		xil_printf("%02x%02x-", data[i], data[i+1]);
-	};
-	xil_printf("\n\r");
+	uint8_t data[sizeof(PREFIX)+sizeof(cords_t)]={PREFIX>>24, PREFIX>>16, PREFIX>>8, PREFIX};
+	memcpy(data+sizeof(PREFIX), cords_p, sizeof(cords_t));
+	send_data(data, sizeof(PREFIX)+sizeof(cords_t));
 	return 0;
 }
+void delay_ms(uint32_t ms)
+{
+	usleep(ms*1000);
+}
+
+void send_float(float num)
+{
+	float ref = num;
+	send_data((uint8_t*) &ref, sizeof(float));
+}
+
 int main()
 {
     init_platform();
     //int a = 0;
-    cords_t cords;
+    cords_t cords = {
+    		.pos.x = 1.1,
+			.pos.y = 2.2,
+			.pos.z = 3.3,
+			.rot.x = 4.4,
+			.rot.y = 5.5,
+			.rot.z = 6.6
+    };
     while(1)
     {
 
-		//xil_printf("Hello World %f\n\r", a++);
-    	send_cords(&cords);
-		usleep(1000000);
+
+		//Process data
+		//send_cords(&cords);
+
+	   uint8_t data[sizeof(PREFIX)]={PREFIX>>24, PREFIX>>16, PREFIX>>8, PREFIX};
+	   send_data(data, sizeof(PREFIX));
+
+		delay_ms(1000);
     }
     cleanup_platform();
     return 0;
