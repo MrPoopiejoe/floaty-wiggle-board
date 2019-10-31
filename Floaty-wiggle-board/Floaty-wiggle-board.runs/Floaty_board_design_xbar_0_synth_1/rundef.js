@@ -22,8 +22,8 @@ var ISEJScriptLib = RDScrDir + "/ISEWrap.js";
 eval( EAInclude(ISEJScriptLib) );
 
 
-// ISEStep( "vivado",
-//          "-log Floaty_board_design_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_xbar_0.tcl" );
+ISEStep( "vivado",
+         "-log Floaty_board_design_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_xbar_0.tcl" );
 
 
 

@@ -14,25 +14,25 @@ preplace inst axi_timer_0 -pg 1 -lvl 1 -y 170 -defaultsOSRD
 preplace inst axi_gpio_1 -pg 1 -lvl 1 -y 410 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -y 70 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 3 -y 130 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 3 3 960J -60 1360 -110 1700
-preplace netloc ps7_0_axi_periph_M02_AXI 1 0 6 -10 330 NJ 330 530J 450 NJ 450 NJ 450 1680
-preplace netloc processing_system7_0_M_AXI_GP0 1 3 2 980 -50 NJ
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 1 960
-preplace netloc ps7_0_axi_periph_M03_AXI 1 1 5 270 250 NJ 250 980J 300 NJ 300 1660
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 4 560J 440 NJ 440 NJ 440 1690
-preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 4 1 1350
-preplace netloc processing_system7_0_FIXED_IO 1 3 3 990J 90 1330 250 1700
-preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 5 -20 300 260J 260 540J 260 960J 320 1360
+preplace netloc processing_system7_0_DDR 1 3 3 960J -80 1340 -130 1700
+preplace netloc ps7_0_axi_periph_M02_AXI 1 0 6 -30 330 NJ 330 510J 440 NJ 440 NJ 440 1680
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 2 970 -70 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 3 1 990
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 5 230 450 NJ 450 NJ 450 NJ 450 1670
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 4 550J 260 980J 300 NJ 300 1660
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 4 1 1340
+preplace netloc processing_system7_0_FIXED_IO 1 3 3 1000J 290 N 290 1700
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 0 5 -40 300 220J 250 520J 250 970J 320 1360
 preplace netloc axi_iic_0_IIC 1 2 4 NJ -220 NJ -220 NJ -220 NJ
 preplace netloc axi_gpio_0_GPIO 1 3 3 NJ 340 1350J 350 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -30 290 240 120 550 240 990 310 1340
-preplace netloc axi_gpio_1_GPIO 1 1 5 250J 430 NJ 430 NJ 430 NJ 430 NJ
-preplace netloc ps7_0_axi_periph_M00_AXI 1 0 6 -10 280 250J 270 NJ 270 970J 290 NJ 290 1670
-levelinfo -pg 1 -50 120 410 760 1160 1510 1720 -top -280 -bot 1200
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 -50 290 210 120 540 240 980 90 1350
+preplace netloc axi_gpio_1_GPIO 1 1 5 210J 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc ps7_0_axi_periph_M00_AXI 1 0 6 -30 280 NJ 280 530J 270 960J 310 NJ 310 1690
+levelinfo -pg 1 -70 90 390 760 1170 1510 1720 -top -280 -bot 1200
 ",
 }
 {
-   da_axi4_cnt: "5",
+   da_axi4_cnt: "6",
    da_board_cnt: "5",
    da_ps7_cnt: "1",
 }
