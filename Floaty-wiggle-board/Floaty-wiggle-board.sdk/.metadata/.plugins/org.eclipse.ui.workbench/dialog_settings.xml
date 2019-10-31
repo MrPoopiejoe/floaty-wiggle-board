@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="632" key="DIALOG_X_ORIGIN"/>
+		<item value="129" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="EditorSelectionDialog">
 		<item value="true" key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL"/>
 		<item value=".hdf" key="EditorSelectionDialog.STORE_ID_FILE_EXTENSION"/>
 		<item value="C:\Program Files\Sublime Text 3\sublime_text.exe" key="EditorSelectionDialog.STORE_ID_DESCR"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="-1" key="dialogHeight"/>
-		<item value="-1" key="dialogWidth"/>
+		<item value="250" key="dialogHeight"/>
+		<item value="350" key="dialogWidth"/>
 		<list key="textEntries">
+			<item value="1"/>
 		</list>
 		<list key="orderedElements">
+			<item value="com.xilinx.sdk.tools.command.linkgen"/>
 		</list>
 		<list key="orderedProviders">
+			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textArray">
+			<item value="linker"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

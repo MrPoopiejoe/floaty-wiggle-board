@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Oct 31 11:41:08 2019
-# Process ID: 14428
+# Start of session at: Thu Oct 31 12:57:30 2019
+# Process ID: 7912
 # Current directory: D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/synth_1
 # Command line: vivado.exe -log Floaty_board_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Floaty_board_design_wrapper.tcl
 # Log file: D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/synth_1/Floaty_board_design_wrapper.vds
