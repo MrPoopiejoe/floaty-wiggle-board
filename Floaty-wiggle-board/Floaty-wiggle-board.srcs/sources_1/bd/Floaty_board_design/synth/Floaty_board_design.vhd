@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Wed Oct 30 19:59:44 2019
+--Date        : Thu Oct 31 12:28:25 2019
 --Host        : Lenovo-PC running 64-bit major release  (build 9200)
 --Command     : generate_target Floaty_board_design.bd
 --Design      : Floaty_board_design
@@ -2085,6 +2085,7 @@ architecture STRUCTURE of Floaty_board_design is
   signal axi_iic_0_IIC_SDA_I : STD_LOGIC;
   signal axi_iic_0_IIC_SDA_O : STD_LOGIC;
   signal axi_iic_0_IIC_SDA_T : STD_LOGIC;
+  signal axi_iic_0_iic2intc_irpt : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -2218,7 +2219,6 @@ architecture STRUCTURE of Floaty_board_design is
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_gpio_0_ip2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_gpio_1_gpio_io_t_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal NLW_axi_iic_0_iic2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_iic_0_gpo_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_timer_0_generateout0_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_0_generateout1_UNCONNECTED : STD_LOGIC;
@@ -2334,7 +2334,7 @@ axi_gpio_1: component Floaty_board_design_axi_gpio_1_0
 axi_iic_0: component Floaty_board_design_axi_iic_0_0
      port map (
       gpo(0) => NLW_axi_iic_0_gpo_UNCONNECTED(0),
-      iic2intc_irpt => NLW_axi_iic_0_iic2intc_irpt_UNCONNECTED,
+      iic2intc_irpt => axi_iic_0_iic2intc_irpt,
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M03_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
@@ -2411,7 +2411,7 @@ processing_system7_0: component Floaty_board_design_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      IRQ_F2P(0) => '0',
+      IRQ_F2P(0) => axi_iic_0_iic2intc_irpt,
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),

@@ -1,5 +1,5 @@
 set_property SRC_FILE_INFO {cfile:D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/constrs_1/new/pinout.xdc rfile:../../../Floaty-wiggle-board.srcs/constrs_1/new/pinout.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN V12 [get_ports hdmi_in_ddc_scl_io]
+set_property PACKAGE_PIN H15 [get_ports hdmi_in_ddc_scl_io]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN W16 [get_ports hdmi_in_ddc_sda_io]
+set_property PACKAGE_PIN J15 [get_ports hdmi_in_ddc_sda_io]

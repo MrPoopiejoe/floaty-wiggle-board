@@ -1,4 +1,4 @@
-11:35:59 **** Build of configuration Debug for project odometry_2 ****
+12:34:23 **** Build of configuration Debug for project odometry_2 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -23,5 +23,5 @@ At top level:
            ^~~~~~~~~~~~~~
 make: *** [src/i2c.o] Error 1
 
-11:36:00 Build Finished (took 598ms)
+12:34:24 Build Finished (took 747ms)
 

@@ -645,6 +645,11 @@
         <spirit:internalPortReference spirit:componentRef="rst_ps7_0_50M" spirit:portRef="interconnect_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="ps7_0_axi_periph" spirit:portRef="ARESETN"/>
       </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axi_iic_0_iic2intc_irpt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axi_iic_0" spirit:portRef="iic2intc_irpt"/>
+        <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="IRQ_F2P"/>
+      </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
       <spirit:hierConnection spirit:interfaceRef="DDR/processing_system7_0_DDR">
