@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Oct 21, 2019
+ *      Author: PoopieJoe
+ */
+
+#include "hdr/errorcodes.h"
+
+setup_status_t setup()
+{
+	//setup sensor
+	if (0) return setup_sensor_fail;
+
+	//setup serial comms
+	if (0) return setup_serial_fail;
+
+	return setup_succes;
+};
+
+int main()
+{
+	return 0;
+}
