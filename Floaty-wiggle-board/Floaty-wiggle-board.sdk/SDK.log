@@ -82,3 +82,46 @@
 16:40:51 INFO  : Successfully done setting SDK workspace  
 16:40:51 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
 16:40:51 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.
+11:53:01 INFO  : Registering command handlers for SDK TCF services
+11:53:02 INFO  : Launching XSCT server: xsct.bat -interactive D:\Documents\Fontys\ES\adv_emb\git\floaty-wiggle-board\Floaty-wiggle-board\Floaty-wiggle-board.sdk\temp_xsdb_launch_script.tcl
+11:53:06 INFO  : XSCT server has started successfully.
+11:53:08 INFO  : Successfully done setting XSCT server connection channel  
+11:53:08 INFO  : Successfully done setting SDK workspace  
+11:53:08 INFO  : Processing command line option -hwspec D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+11:53:08 INFO  : Checking for hwspec changes in the project Floaty_board_design_wrapper_hw_platform_0.
+11:53:13 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1572519075204,  Project:1572363547720
+11:53:13 INFO  : The hardware specification for project 'Floaty_board_design_wrapper_hw_platform_0' is different from D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf.
+11:54:06 INFO  : Copied contents of D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper.hdf into \Floaty_board_design_wrapper_hw_platform_0\system.hdf.
+11:54:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:54:15 INFO  : Clearing existing target manager status.
+11:54:15 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:54:15 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:56:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:56:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A77C6EA" && level==0} -index 1' command is executed.
+11:56:20 INFO  : FPGA configured successfully with bitstream "D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.sdk/Floaty_board_design_wrapper_hw_platform_0/Floaty_board_design_wrapper.bit"
+11:57:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:57:06 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+11:57:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+11:59:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:54 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+11:59:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:00:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:00:35 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+12:00:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:01:46 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+12:02:30 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
+12:03:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:03:43 WARN  : Part name present in the hardware specification 'xc7z020clg484-1' doesn't match the one present on the target 'xc7z010'.
+12:03:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+

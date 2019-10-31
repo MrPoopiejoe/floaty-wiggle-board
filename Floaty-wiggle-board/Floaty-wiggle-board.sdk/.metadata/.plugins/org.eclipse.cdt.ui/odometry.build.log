@@ -1,8 +1,8 @@
-15:56:17 **** Incremental Build of configuration Debug for project odometry ****
+12:03:42 **** Incremental Build of configuration Debug for project odometry ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
 
-15:56:18 Build Finished (took 811ms)
+12:03:43 Build Finished (took 261ms)
 
