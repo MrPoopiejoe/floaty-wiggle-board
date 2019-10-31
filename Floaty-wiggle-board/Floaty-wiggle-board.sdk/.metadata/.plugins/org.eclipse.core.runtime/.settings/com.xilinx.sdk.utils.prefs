@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 com.xilinx.sdk.preference.invokecount=10
+=======
+com.xilinx.sdk.preference.invokecount=9
+>>>>>>> whynoworkey
 eclipse.preferences.version=1
