@@ -1,0 +1,27 @@
+11:35:59 **** Build of configuration Debug for project odometry_2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+In file included from ../../odometry_2_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../../odometry_2_bsp/ps7_cortexa9_0/include/xil_io.h:65,
+                 from ../src/hdr/i2c.h:11,
+                 from ../src/i2c.c:8:
+../../odometry_2_bsp/ps7_cortexa9_0/include/xparameters.h:1:0: error: unterminated #ifndef
+ #ifndef XPARAMETERS_H   /* prevent circular inclusions */
+ 
+../src/i2c.c: In function 'clrregbit':
+../src/i2c.c:17:46: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  Xil_Out32(regaddr, Xil_In32(regaddr) & (!(1 << bit)) );
+                                           ~~~^~~~~~~
+In file included from ../src/i2c.c:8:0:
+At top level:
+../src/hdr/i2c.h:36:11: warning: 'waiting_for_rx' defined but not used [-Wunused-variable]
+ static u8 waiting_for_rx;
+           ^~~~~~~~~~~~~~
+make: *** [src/i2c.o] Error 1
+
+11:36:00 Build Finished (took 598ms)
+
