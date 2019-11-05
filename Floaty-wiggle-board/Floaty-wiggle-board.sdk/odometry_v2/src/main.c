@@ -19,6 +19,7 @@
 #include "xil_types.h"
 #include "xil_assert.h"
 #include "bspconfig.h"
+#include "xtime_l.h"
 
 #define MPU6050_I2C_ADDR (0b1101000)
 #define MPU6050_ACCEL_XOUT_H (0x3B)
@@ -40,6 +41,7 @@
 
 #define ASCII_DATA	2
 #define DIGITS 1000
+#define GRAV_CONST 9.81
 
 //0xD0 0xD0 0xCA 0xFE
 const unsigned int PREFIX = 0xD0D0CAFE;
@@ -116,26 +118,56 @@ int main()
 	gyroreading_t body_rates = {.x = 0, .y = 0, .z = 0};
 	orientation_t orientation = {.phi = 0, .psi = 0, .theta = 0};
 	position_t position = {.x = 0, .y = 0, .z = 0};
-	const float delta_time_gyro = 0.000125;		//8kSps for gyro
-	const float delta_time_accel = 0.001;		//1kSps for accel
+	float delta_time_gyro = 0.000125;		//8kSps for gyro
+	float delta_time_accel = 0.001;		//1kSps for accel
 	float euler_rate_phi_cur = 0, euler_rate_theta_cur = 0, euler_rate_psi_cur = 0;	//euler rates of current sample
 	float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0;	//euler rates of previous sample
 	float abs_accel_x_cur = 0, abs_accel_y_cur = 0, abs_accel_z_cur = 0;	//absolute acceleration of current sample
 	float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0;	//absolute acceleration of previous sample
 	float velocity_x_cur = 0, velocity_y_cur = 0, velocity_z_cur = 0;	//current velocities in the cardinal directions
 	float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0;	//previous velocities in the cardinal directions
+	double time_cur = 0, time_pre_gyro = 0, time_pre_accel = 0;	//time calculations
 	struct { float x; float y; float z; } gravity_vector =
 	{
 		.x = 0,
 		.y = 0,
 		.z = 0
 	};	//magnitude of gravity in each of the cardinal directions, determined during calibration
+
+	//calibration
+	const int gyro_calibration_samples = 1000;
+	gyroreading_t tmp_gyro_calibration[gyro_calibration_samples];
+	for (int i = 0; i < gyro_calibration_samples; i++)
+	{
+		tmp_gyro_calibration[i] = convert_gyroreading( mpu6050_readgyro() );
+	}
+
+	//average measurements to get offset
+	gyroreading_t gyro_offset = {.x = 0, .y = 0, .z = 0};
+	for (int i = 0; i < gyro_calibration_samples; i++)
+	{
+		gyro_offset.x += tmp_gyro_calibration[i].x/gyro_calibration_samples;
+		gyro_offset.y += tmp_gyro_calibration[i].y/gyro_calibration_samples;
+		gyro_offset.z += tmp_gyro_calibration[i].z/gyro_calibration_samples;
+	}
+
+
 	while(running)
 	{
+		XTime tmp_time;
+		XTime_GetTime(&tmp_time);
+		time_cur = tmp_time/COUNTS_PER_SECOND;
+		delta_time_gyro = time_pre_gyro - time_cur;
+		delta_time_accel = time_pre_accel - time_cur;
 		//start reading
 
 		//convert raw values to real numbers
 		body_rates = convert_gyroreading( mpu6050_readgyro() );
+
+		//remove offset
+		body_rates.x -= gyro_offset.x;
+		body_rates.y -= gyro_offset.y;
+		body_rates.z -= gyro_offset.z;
 
 		if ( (counter % 8) == 0 )
 		{
@@ -192,6 +224,8 @@ int main()
 			abs_accel_x_pre = abs_accel_x_cur;
 			abs_accel_y_pre = abs_accel_y_cur;
 			abs_accel_z_pre = abs_accel_z_cur;
+
+			time_pre_accel = time_cur;
 		}
 
 		//run algorithm calculations
@@ -211,18 +245,19 @@ int main()
 								+ body_rates.z*((cos(orientation.phi))/(cos(orientation.theta)));
 
 		//calculate new orientation from euler rates
-		//new theta = old theta + euler rate theta * 0.125ms
-		orientation.theta 	+= ( (euler_rate_theta_cur + euler_rate_theta_pre)/2 ) * delta_time_gyro;
-		orientation.phi 	+= ( (euler_rate_phi_cur + euler_rate_phi_pre)/2 ) * delta_time_gyro;
-		orientation.psi		+= ( (euler_rate_psi_cur + euler_rate_psi_pre)/2 ) * delta_time_gyro;
+		//new theta = old theta + euler rate theta * dt
+		orientation.theta 	+= ( euler_rate_theta_cur ) 	* delta_time_gyro;
+		orientation.phi 	+= ( euler_rate_phi_cur ) 		* delta_time_gyro;
+		orientation.psi		+= ( euler_rate_psi_cur ) 		* delta_time_gyro;
 
 		//make current samples the previous samples in anticipation of the next loop
 		euler_rate_theta_pre = euler_rate_theta_cur;
 		euler_rate_phi_pre = euler_rate_phi_cur;
 		euler_rate_psi_pre = euler_rate_psi_cur;
 
-		counter++;
-		usleep(125); //0.125 ms per loop (yes this is inaccurate but we didn't have enough time to get timers working so heck you)
+		if (counter >= 10000) { counter = 0; } else { counter++; };
+		//usleep(125); //0.125 ms per loop (yes this is inaccurate but we didn't have enough time to get timers working so heck you)
+		time_pre_gyro = time_cur;
 	}
 	return 0;
 }
@@ -277,19 +312,20 @@ gyroreading_raw_t mpu6050_readgyro( void )
 accelreading_t convert_accelreading(accelreading_raw_t reading)
 {
 	accelreading_t result = {.x = 0, .y = 0, .z = 0};
-	result.x = ( (float)(reading.x) / MPU_ACCEL_SENSITIVITY );
-	result.y = ( (float)(reading.y) / MPU_ACCEL_SENSITIVITY );
-	result.z = ( (float)(reading.z) / MPU_ACCEL_SENSITIVITY );
+	result.x = ( (float)(reading.x) / MPU_ACCEL_SENSITIVITY ) * GRAV_CONST;
+	result.y = ( (float)(reading.y) / MPU_ACCEL_SENSITIVITY ) * GRAV_CONST;
+	result.z = ( (float)(reading.z) / MPU_ACCEL_SENSITIVITY ) * GRAV_CONST;
 
 	return result;
 }
 
+//convert to rad/s
 gyroreading_t convert_gyroreading( gyroreading_raw_t reading )
 {
 	gyroreading_t result;
-	result.x = ( (float)(reading.x) / MPU_GYRO_SENSITIVITY );
-	result.y = ( (float)(reading.y) / MPU_GYRO_SENSITIVITY );
-	result.z = ( (float)(reading.z) / MPU_GYRO_SENSITIVITY );
+	result.x = ( (float)(reading.x) / MPU_GYRO_SENSITIVITY ) * (M_PI/180);
+	result.y = ( (float)(reading.y) / MPU_GYRO_SENSITIVITY ) * (M_PI/180);
+	result.z = ( (float)(reading.z) / MPU_GYRO_SENSITIVITY ) * (M_PI/180);
 
 	return result;
 }
