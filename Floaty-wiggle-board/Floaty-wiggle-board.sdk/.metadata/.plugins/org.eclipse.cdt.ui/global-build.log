@@ -856,3 +856,1301 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+14:38:13 **** Auto Build of configuration Debug for project odometry ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:38:14 **** Auto Build of configuration Debug for project odometry_v2 ****
+14:42:09 **** Build of project odometry_v2_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/iic_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iic"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_7/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from sleep.c:57:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from usleep.c:60:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:55:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:53:0:
+xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+14:43:34 **** Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c.d" -MT"src/i2c.o" -o "src/i2c.o" "../src/i2c.c"
+../src/i2c.c: In function 'clrregbit':
+../src/i2c.c:17:46: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  Xil_Out32(regaddr, Xil_In32(regaddr) & (!(1 << bit)) );
+                                           ~~~^~~~~~~
+'Finished building: ../src/i2c.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40744	   1144	  22576	  64464	   fbd0	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+14:43:41 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:44:07 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:44:44 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:45:14 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:49:18 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40752	   1144	  22576	  64472	   fbd8	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+14:49:28 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+14:54:22 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:184:25: error: expected ')' before 'delta_time_gyro'
+         xil_printf("%d" delta_time_gyro * 1000000);
+                         ^~~~~~~~~~~~~~~
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:54:30 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40816	   1144	  22576	  64536	   fc18	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+14:54:37 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:20:59 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40816	   1144	  22576	  64536	   fc18	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+12:15:55 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'printfloat_data':
+../src/main.c:345:68: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  xil_printf("%s(%d.%d, %d.%d, %d.%d)%s \r\n", pre_string, data[0], abs(data[1]), data[2], data[3], data[4], data[5], post_string);
+                                                                    ^~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40744	   1144	  22576	  64464	   fbd0	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+12:16:24 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40744	   1144	  22576	  64464	   fbd0	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+12:17:08 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:124:58: warning: variable 'euler_rate_psi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                                          ^~~~~~~~~~~~~~~~~~
+../src/main.c:124:32: warning: variable 'euler_rate_theta_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+                                ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:124:8: warning: variable 'euler_rate_phi_pre' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0; //euler rates of previous sample
+        ^~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40744	   1144	  22576	  64464	   fbd0	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+14:42:13 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:242:3: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_phi'?
+   euler_rate_phi_cur =  body_rates.x
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi
+../src/main.c:242:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:246:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:249:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:259:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:260:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:261:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+../src/main.c:127:8: warning: unused variable 'euler_rate_psi' [-Wunused-variable]
+  float euler_rate_psi[3] = {0,0,0};
+        ^~~~~~~~~~~~~~
+../src/main.c:126:8: warning: unused variable 'euler_rate_theta' [-Wunused-variable]
+  float euler_rate_theta[3] = {0,0,0};
+        ^~~~~~~~~~~~~~~~
+../src/main.c:125:8: warning: unused variable 'euler_rate_phi' [-Wunused-variable]
+  float euler_rate_phi[3] = {0,0,0};
+        ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+14:55:49 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'strange_kutta':
+../src/main.c:104:2: warning: implicit declaration of function 'mempcpy' [-Wimplicit-function-declaration]
+  mempcpy(&k1, &K2, 3*sizeof(float));
+  ^~~~~~~
+../src/main.c:104:2: warning: incompatible implicit declaration of built-in function 'mempcpy'
+../src/main.c:104:11: error: 'k1' undeclared (first use in this function); did you mean 'k'?
+  mempcpy(&k1, &K2, 3*sizeof(float));
+           ^~
+           k
+../src/main.c:104:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:258:3: error: 'euler_rate_phi' undeclared (first use in this function)
+   euler_rate_phi[0] =  body_rates.x
+   ^~~~~~~~~~~~~~
+../src/main.c:262:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_phi'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_phi
+../src/main.c:265:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:271:25: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   orientation.phi  += ( euler_rate_phi_cur )   * delta_time_gyro;
+                         ^~~~~~~~~~~~~~~~~~
+                         euler_rate_psi_cur
+../src/main.c:275:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:276:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:277:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+../src/main.c: In function 'strange_kutta':
+../src/main.c:107:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+14:56:03 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'strange_kutta':
+../src/main.c:108:2: warning: implicit declaration of function 'mempcpy' [-Wimplicit-function-declaration]
+  mempcpy(&k1, &K2, 3*sizeof(float));
+  ^~~~~~~
+../src/main.c:108:2: warning: incompatible implicit declaration of built-in function 'mempcpy'
+../src/main.c:108:11: error: 'k1' undeclared (first use in this function); did you mean 'k'?
+  mempcpy(&k1, &K2, 3*sizeof(float));
+           ^~
+           k
+../src/main.c:108:11: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:266:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:269:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+../src/main.c:275:25: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   orientation.phi  += ( euler_rate_phi_cur )   * delta_time_gyro;
+                         ^~~~~~~~~~~~~~~~~~
+                         euler_rate_psi_cur
+../src/main.c:279:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:280:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:281:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+../src/main.c: In function 'strange_kutta':
+../src/main.c:111:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+15:00:35 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'strange_kutta':
+../src/main.c:99:2: error: 'next_val' undeclared (first use in this function); did you mean 'cur_val'?
+  next_val = cur_val + dt/6*(pre2_dxdt + 4*pre_dxdt + cur_dxdt);
+  ^~~~~~~~
+  cur_val
+../src/main.c:99:2: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'main':
+../src/main.c:256:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:259:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+../src/main.c:265:25: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   orientation.phi  += ( euler_rate_phi_cur )   * delta_time_gyro;
+                         ^~~~~~~~~~~~~~~~~~
+                         euler_rate_psi_cur
+../src/main.c:269:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:270:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:271:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+../src/main.c: In function 'strange_kutta':
+../src/main.c:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] Error 1
+15:00:59 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:255:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:255:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:258:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+../src/main.c:264:25: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   orientation.phi  += ( euler_rate_phi_cur )   * delta_time_gyro;
+                         ^~~~~~~~~~~~~~~~~~
+                         euler_rate_psi_cur
+../src/main.c:268:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:269:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:270:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+make: *** [src/main.o] Error 1
+15:01:23 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:255:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:255:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:258:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+../src/main.c:264:25: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   orientation.phi  += ( euler_rate_phi_cur )   * delta_time_gyro;
+                         ^~~~~~~~~~~~~~~~~~
+                         euler_rate_psi_cur
+../src/main.c:268:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:269:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:270:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+make: *** [src/main.o] Error 1
+15:02:44 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:254:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:254:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:257:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+../src/main.c:262:54: error: expected expression before ')' token
+   orientation.theta = runge_kutta(orientation.theta, );
+                                                      ^
+../src/main.c:262:23: error: too few arguments to function 'runge_kutta'
+   orientation.theta = runge_kutta(orientation.theta, );
+                       ^~~~~~~~~~~
+../src/main.c:93:7: note: declared here
+ float runge_kutta(float cur_val, float cur_dxdt, float pre_dxdt, float pre2_dxdt, float dt)
+       ^~~~~~~~~~~
+../src/main.c:264:25: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   orientation.phi  += ( euler_rate_phi_cur )   * delta_time_gyro;
+                         ^~~~~~~~~~~~~~~~~~
+                         euler_rate_psi_cur
+../src/main.c:268:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:269:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_cur
+../src/main.c:270:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+../src/main.c:135:8: warning: unused variable 'euler_rate_psi' [-Wunused-variable]
+  float euler_rate_psi[3] = {0,0,0};
+        ^~~~~~~~~~~~~~
+../src/main.c:134:8: warning: unused variable 'euler_rate_theta' [-Wunused-variable]
+  float euler_rate_theta[3] = {0,0,0};
+        ^~~~~~~~~~~~~~~~
+../src/main.c:133:8: warning: variable 'euler_rate_phi' set but not used [-Wunused-but-set-variable]
+  float euler_rate_phi[3] = {0,0,0};
+        ^~~~~~~~~~~~~~
+make: *** [src/main.o] Error 1
+15:04:58 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:254:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:254:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:257:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+../src/main.c:269:3: error: 'euler_rate_theta_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_cur'?
+   euler_rate_theta_pre = euler_rate_theta_cur;
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta_cur
+../src/main.c:270:3: error: 'euler_rate_phi_pre' undeclared (first use in this function); did you mean 'euler_rate_theta_pre'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_theta_pre
+../src/main.c:270:24: error: 'euler_rate_phi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi_cur'?
+   euler_rate_phi_pre = euler_rate_phi_cur;
+                        ^~~~~~~~~~~~~~~~~~
+                        euler_rate_psi_cur
+../src/main.c:271:3: error: 'euler_rate_psi_pre' undeclared (first use in this function); did you mean 'euler_rate_phi_pre'?
+   euler_rate_psi_pre = euler_rate_psi_cur;
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_phi_pre
+make: *** [src/main.o] Error 1
+15:06:02 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:254:3: error: 'euler_rate_theta_cur' undeclared (first use in this function); did you mean 'euler_rate_theta'?
+   euler_rate_theta_cur =  body_rates.y*(cosf(orientation.phi))
+   ^~~~~~~~~~~~~~~~~~~~
+   euler_rate_theta
+../src/main.c:254:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:257:3: error: 'euler_rate_psi_cur' undeclared (first use in this function); did you mean 'euler_rate_psi'?
+   euler_rate_psi_cur =  body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+   ^~~~~~~~~~~~~~~~~~
+   euler_rate_psi
+make: *** [src/main.o] Error 1
+15:06:32 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  40936	   1144	  22576	  64656	   fc90	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:09:49 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41128	   1144	  22576	  64848	   fd50	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:10:23 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41128	   1144	  22576	  64848	   fd50	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:12:34 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:18:23 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:19:31 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:20:35 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:21:14 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:21:46 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:22:10 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:23:53 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:24:59 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:25:40 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:26:07 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:26:26 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:26:41 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:28:14 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:28:28 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:28:44 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:29:24 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:29:56 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+15:35:56 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:143:50: warning: variable 'abs_accel_z_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                                                  ^~~~~~~~~~~~~~~
+../src/main.c:143:29: warning: variable 'abs_accel_y_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                             ^~~~~~~~~~~~~~~
+../src/main.c:143:8: warning: variable 'abs_accel_x_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+        ^~~~~~~~~~~~~~~
+../src/main.c:141:8: warning: unused variable 'velocity_z' [-Wunused-variable]
+  float velocity_z[3] = {0,0,0};
+        ^~~~~~~~~~
+../src/main.c:139:8: warning: unused variable 'velocity_x' [-Wunused-variable]
+  float velocity_x[3] = {0,0,0};
+        ^~~~~~~~~~
+../src/main.c:138:8: warning: unused variable 'accel_z' [-Wunused-variable]
+  float accel_z[3] = {0,0,0};
+        ^~~~~~~
+../src/main.c:137:8: warning: unused variable 'accel_y' [-Wunused-variable]
+  float accel_y[3] = {0,0,0};
+        ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41192	   1144	  22576	  64912	   fd90	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:36:48 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:143:50: warning: variable 'abs_accel_z_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                                                  ^~~~~~~~~~~~~~~
+../src/main.c:143:29: warning: variable 'abs_accel_y_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                             ^~~~~~~~~~~~~~~
+../src/main.c:143:8: warning: variable 'abs_accel_x_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+        ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41320	   1144	  22576	  65040	   fe10	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:38:06 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:143:50: warning: variable 'abs_accel_z_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                                                  ^~~~~~~~~~~~~~~
+../src/main.c:143:29: warning: variable 'abs_accel_y_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                             ^~~~~~~~~~~~~~~
+../src/main.c:143:8: warning: variable 'abs_accel_x_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+        ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41320	   1144	  22576	  65040	   fe10	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:40:02 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:145:48: warning: variable 'velocity_z_pre' set but not used [-Wunused-but-set-variable]
+  float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0; //previous velocities in the cardinal directions
+                                                ^~~~~~~~~~~~~~
+../src/main.c:145:28: warning: variable 'velocity_y_pre' set but not used [-Wunused-but-set-variable]
+  float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0; //previous velocities in the cardinal directions
+                            ^~~~~~~~~~~~~~
+../src/main.c:145:8: warning: variable 'velocity_x_pre' set but not used [-Wunused-but-set-variable]
+  float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0; //previous velocities in the cardinal directions
+        ^~~~~~~~~~~~~~
+../src/main.c:143:50: warning: variable 'abs_accel_z_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                                                  ^~~~~~~~~~~~~~~
+../src/main.c:143:29: warning: variable 'abs_accel_y_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                             ^~~~~~~~~~~~~~~
+../src/main.c:143:8: warning: variable 'abs_accel_x_pre' set but not used [-Wunused-but-set-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+        ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41384	   1144	  22576	  65104	   fe50	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:42:10 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:145:48: warning: unused variable 'velocity_z_pre' [-Wunused-variable]
+  float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0; //previous velocities in the cardinal directions
+                                                ^~~~~~~~~~~~~~
+../src/main.c:145:28: warning: unused variable 'velocity_y_pre' [-Wunused-variable]
+  float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0; //previous velocities in the cardinal directions
+                            ^~~~~~~~~~~~~~
+../src/main.c:145:8: warning: unused variable 'velocity_x_pre' [-Wunused-variable]
+  float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0; //previous velocities in the cardinal directions
+        ^~~~~~~~~~~~~~
+../src/main.c:144:48: warning: unused variable 'velocity_z_cur' [-Wunused-variable]
+  float velocity_x_cur = 0, velocity_y_cur = 0, velocity_z_cur = 0; //current velocities in the cardinal directions
+                                                ^~~~~~~~~~~~~~
+../src/main.c:144:28: warning: unused variable 'velocity_y_cur' [-Wunused-variable]
+  float velocity_x_cur = 0, velocity_y_cur = 0, velocity_z_cur = 0; //current velocities in the cardinal directions
+                            ^~~~~~~~~~~~~~
+../src/main.c:144:8: warning: unused variable 'velocity_x_cur' [-Wunused-variable]
+  float velocity_x_cur = 0, velocity_y_cur = 0, velocity_z_cur = 0; //current velocities in the cardinal directions
+        ^~~~~~~~~~~~~~
+../src/main.c:143:50: warning: unused variable 'abs_accel_z_pre' [-Wunused-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                                                  ^~~~~~~~~~~~~~~
+../src/main.c:143:29: warning: unused variable 'abs_accel_y_pre' [-Wunused-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+                             ^~~~~~~~~~~~~~~
+../src/main.c:143:8: warning: unused variable 'abs_accel_x_pre' [-Wunused-variable]
+  float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0; //absolute acceleration of previous sample
+        ^~~~~~~~~~~~~~~
+../src/main.c:142:50: warning: unused variable 'abs_accel_z_cur' [-Wunused-variable]
+  float abs_accel_x_cur = 0, abs_accel_y_cur = 0, abs_accel_z_cur = 0; //absolute acceleration of current sample
+                                                  ^~~~~~~~~~~~~~~
+../src/main.c:142:29: warning: unused variable 'abs_accel_y_cur' [-Wunused-variable]
+  float abs_accel_x_cur = 0, abs_accel_y_cur = 0, abs_accel_z_cur = 0; //absolute acceleration of current sample
+                             ^~~~~~~~~~~~~~~
+../src/main.c:142:8: warning: unused variable 'abs_accel_x_cur' [-Wunused-variable]
+  float abs_accel_x_cur = 0, abs_accel_y_cur = 0, abs_accel_z_cur = 0; //absolute acceleration of current sample
+        ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41640	   1144	  22576	  65360	   ff50	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:42:22 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41576	   1144	  22576	  65296	   ff10	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:42:27 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41576	   1144	  22576	  65296	   ff10	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:43:10 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41576	   1144	  22576	  65296	   ff10	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:43:24 **** Auto Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../odometry_v2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:22:0:
+../../odometry_v2_bsp/ps7_cortexa9_0/include/xtime_l.h:89:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: odometry_v2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../odometry_v2_bsp/ps7_cortexa9_0/lib -o "odometry_v2.elf"  ./src/i2c.o ./src/main.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: odometry_v2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size odometry_v2.elf  |tee "odometry_v2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41576	   1144	  22576	  65296	   ff10	odometry_v2.elf
+'Finished building: odometry_v2.elf.size'
+' '
+15:43:37 **** Incremental Build of configuration Debug for project odometry_v2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
