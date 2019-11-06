@@ -23,32 +23,31 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/wt [current_project]
-set_property parent.project_path D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.xpr [current_project]
+set_property webtalk.parent_dir D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/wt [current_project]
+set_property parent.project_path D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
-set_property ip_repo_paths d:/Documents/Fontys/ES/adv_emb/blokkies [current_project]
-set_property ip_output_repo d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/ip [current_project]
+set_property ip_output_repo d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/hdl/Floaty_board_design_wrapper.vhd
-add_files D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/Floaty_board_design.bd
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_processing_system7_0_0/Floaty_board_design_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_timer_0_0/Floaty_board_design_axi_timer_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_timer_0_0/Floaty_board_design_axi_timer_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_rst_ps7_0_50M_0/Floaty_board_design_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_rst_ps7_0_50M_0/Floaty_board_design_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/Floaty_board_design_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/Floaty_board_design_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/Floaty_board_design_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/Floaty_board_design_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/Floaty_board_design_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/Floaty_board_design_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_iic_0_0/Floaty_board_design_axi_iic_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_iic_0_0/Floaty_board_design_axi_iic_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_auto_pc_0/Floaty_board_design_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/Floaty_board_design_ooc.xdc]
+read_vhdl -library xil_defaultlib D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/hdl/Floaty_board_design_wrapper.vhd
+add_files D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/Floaty_board_design.bd
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_processing_system7_0_0/Floaty_board_design_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_timer_0_0/Floaty_board_design_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_timer_0_0/Floaty_board_design_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_rst_ps7_0_50M_0/Floaty_board_design_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_rst_ps7_0_50M_0/Floaty_board_design_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/Floaty_board_design_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/Floaty_board_design_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_0_0/Floaty_board_design_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/Floaty_board_design_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/Floaty_board_design_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_gpio_1_0/Floaty_board_design_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_iic_0_0/Floaty_board_design_axi_iic_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_axi_iic_0_0/Floaty_board_design_axi_iic_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/ip/Floaty_board_design_auto_pc_0/Floaty_board_design_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/sources_1/bd/Floaty_board_design/Floaty_board_design_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -58,8 +57,8 @@ set_property used_in_implementation false [get_files -all D:/Documents/Fontys/ES
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/constrs_1/new/pinout.xdc
-set_property used_in_implementation false [get_files D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/constrs_1/new/pinout.xdc]
+read_xdc D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/constrs_1/new/pinout.xdc
+set_property used_in_implementation false [get_files D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.srcs/constrs_1/new/pinout.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

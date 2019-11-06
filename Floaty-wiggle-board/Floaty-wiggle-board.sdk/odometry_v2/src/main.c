@@ -38,7 +38,7 @@
 #define MPU_ACCEL_SENSITIVITY (float)(16384) //sensitivity of the accelecrometer measurement in LSB/g. Convert from binary value to g's by dividing the raw value by this, and subtract 2
 #define MPU_GYRO_SENSITIVITY (float)(131) //sensitivity of the gyroscopr measurement in LSB/(deg/s). convert from binary value to deg/s by dividing the raw value by this, and subtract 250
 
-#define ASCII_DATA	2
+#define ASCII_DATA	3
 #define DIGITS 1000
 
 //0xD0 0xD0 0xCA 0xFE
@@ -146,8 +146,30 @@ int main()
 
 				#if ASCII_DATA == 2
 					   xil_printf("Prefix = 0xD0D0CAFE\r\n");
-					   printfloat_data("Position: ", position.x, position.y, position.z, "");
-					   printfloat_data("Rotation: ", orientation.theta, orientation.phi, orientation.psi,"\r\n");
+					   position.x = 1.112;
+					   position.y = 2.2;
+					   position.z = -10.9;
+
+					   orientation.theta = -4;
+					   orientation.phi = 30.197;
+					   orientation.psi = 40.040;
+
+					   printfloat_data("Position: ", position.x,  position.y, position.z, "");
+					   printfloat_data("Orientation: ", orientation.theta, orientation.phi, orientation.psi,",\r\n");
+
+		        #elif ASCII_DATA == 3
+					   xil_printf("Prefix = 0xD0D0CAFE\r\n");
+					   position.x = 1.112;
+					   position.y = 2.2;
+					   position.z = -10.9;
+
+					   orientation.theta = -4;
+					   orientation.phi = 30.197;
+					   orientation.psi = 40.040;
+
+					   printfloat_data(",", position.x,  position.y, position.z, "");
+					   printfloat_data(",", orientation.theta, orientation.phi, orientation.psi,",\r\n");
+
 				#else
 					   uint8_t data[sizeof(PREFIX) + sizeof(position) + sizeof(orientation)] = { PREFIX >> 24, PREFIX >> 16, PREFIX >> 8, PREFIX };
 					   memcpy(data + sizeof(PREFIX), &position, sizeof(position));
@@ -294,17 +316,106 @@ gyroreading_t convert_gyroreading( gyroreading_raw_t reading )
 	return result;
 }
 
+void printfloat1(float data_float)
+{
+	float data = data_float;
+
+	//xil_printf("Hoi %d  %d %d\r\n", (int) (data*DIGITS), (int_part*DIGITS), (data*DIGITS)-(int_part*DIGITS));
+	char signed_num;
+
+	if(data<0)
+	{
+		data = ! data;
+		signed_num=1;
+	}
+	else
+	{
+		signed_num = 0;
+	}
+
+	int int_part= (int)data;
+	//xil_printf("%d\r\n", int_part);
+	int dec_part = (data*DIGITS) - (int_part*DIGITS);
+
+	/*if (dec_part<0)
+	{
+		dec_part=!dec_part;
+	}*/
+if(signed_num) //Negative
+	if(dec_part<10)
+	{
+		xil_printf("-%d.00%d", int_part, dec_part);
+	}
+	else if(dec_part<100)
+	{
+		xil_printf("-%d.0%d", int_part, dec_part);
+	}
+	else
+	{
+		xil_printf("-%d.%d", int_part, dec_part);
+	}
+else //Positive
+{
+	if(dec_part<10)
+	{
+		xil_printf("%d.00%d", int_part, dec_part);
+	}
+	else if(dec_part<100)
+	{
+		xil_printf("%d.0%d", int_part, dec_part);
+	}
+	else
+	{
+		xil_printf("%d.%d", int_part, dec_part);
+	}
+}
+}
+
+void printfloat_pudding(char* pre_string, float data1, float data2, float data3, char* post_string)
+{
+	xil_printf("%s", pre_string);
+	printfloat1(data1);
+	xil_printf(", ");
+	printfloat1(data2);
+	xil_printf(", ");
+	printfloat1(data3);
+	xil_printf("%s", post_string);
+}
+
 void printfloat_data(char* pre_string, float data1, float data2, float data3, char* post_string)
 {
-	int data[6];
+	xil_printf("%s", pre_string);
+	printfloat1(data1);
+	xil_printf(", ");
+	printfloat1(data2);
+	xil_printf(", ");
+	printfloat1(data3);
+	xil_printf("%s", post_string);
+/*	int data[6];
 
 	data[0] = (int)data1;
 	data[1] = (data1 - data[0]) * DIGITS;
+	if(data[1]<0)
+	{
+		data[1]=!data[1];
+	}
 	data[2] = (int)data2;
 	data[3] = (data2 - data[2]) * DIGITS;
+	if(data[3]<0)
+	{
+		data[1]=!data[1];
+	}
 	data[4] = (int)data3;
 	data[5] = (data3 - data[4]) * DIGITS;
-	xil_printf("%s(%d.%d, %d.%d, %d.%d)%s \r\n", pre_string, data[0], data[1], data[2], data[3], data[4], data[5], post_string);
+	if(data[5]<0)
+	{
+		data[1]=!data[1];
+	}
+	if(data[1]<10)
+	{
+
+	}
+	xil_printf("%s(%d.%03d, %d.%03d, %d.%03d)%s \r\n", pre_string, data[0], data[1], data[2], data[3], data[4], data[5], post_string);*/
 }
 
 void send_data(uint8_t * data, uint16_t len)

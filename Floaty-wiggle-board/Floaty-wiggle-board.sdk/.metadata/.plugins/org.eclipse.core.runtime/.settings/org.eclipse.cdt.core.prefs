@@ -15,5 +15,6 @@ indexer/skipReferences=false
 indexer/skipTypeReferences=false
 indexer/updatePolicy=0
 indexer/useHeuristicIncludeResolution=true
+macros/workspace=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<macros/>\r\n
 org.eclipse.cdt.core.showSourceFilesInBinaries=true
 org.eclipse.cdt.core.showSourceRootsAtTopLevelOfProject=true

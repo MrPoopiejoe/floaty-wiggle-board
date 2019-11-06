@@ -66,7 +66,7 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint Floaty_board_design_wrapper_routed.dcp
-  set_property webtalk.parent_dir D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/wt [current_project]
+  set_property webtalk.parent_dir D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.cache/wt [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force Floaty_board_design_wrapper.mmi }
   write_bitstream -force Floaty_board_design_wrapper.bit 

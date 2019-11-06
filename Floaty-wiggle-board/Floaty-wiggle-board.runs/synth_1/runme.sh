@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/D_Programs/Xilinx/SDK/2018.2/bin;D:/D_Programs/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/nt64;D:/D_Programs/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/nt64:D:/D_Programs/Xilinx/Vivado/2018.2/bin
+  PATH=D:/Vivado/SDK/2018.2/bin;D:/Vivado/Vivado/2018.2/ids_lite/ISE/bin/nt64;D:/Vivado/Vivado/2018.2/ids_lite/ISE/lib/nt64:D:/Vivado/Vivado/2018.2/bin
 else
-  PATH=D:/D_Programs/Xilinx/SDK/2018.2/bin;D:/D_Programs/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/nt64;D:/D_Programs/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/nt64:D:/D_Programs/Xilinx/Vivado/2018.2/bin:$PATH
+  PATH=D:/Vivado/SDK/2018.2/bin;D:/Vivado/Vivado/2018.2/ids_lite/ISE/bin/nt64;D:/Vivado/Vivado/2018.2/ids_lite/ISE/lib/nt64:D:/Vivado/Vivado/2018.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documents/Fontys/ES/adv_emb/git/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/synth_1'
+HD_PWD='D:/Fontys_Jaar4/Embedded/mini_project/floaty-wiggle-board/Floaty-wiggle-board/Floaty-wiggle-board.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
