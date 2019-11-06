@@ -43,6 +43,11 @@
 #define DIGITS 1000
 #define GRAV_CONST 9.81
 
+#define K1 k[0]
+#define K2 k[1]
+#define K3 k[2] //Super gaaf
+#define K4 k[3]
+
 //0xD0 0xD0 0xCA 0xFE
 const unsigned int PREFIX = 0xD0D0CAFE;
 
@@ -76,7 +81,6 @@ typedef struct
 	float x,y,z;
 }position_t;
 
-
 u8 mpu6050_reg_read( u8 regaddr );
 u8 mpu6050_reg_write( u8 regaddr , u8 data );
 void mpu6050_reg_read_multiple( u8 regaddr , u8 num_bytes , u8* data);
@@ -86,6 +90,10 @@ accelreading_t convert_accelreading(accelreading_raw_t reading);
 gyroreading_t convert_gyroreading( gyroreading_raw_t reading );
 void send_data(uint8_t * data, uint16_t len);
 void printfloat_data(char* pre_string, float data1, float data2, float data3, char* post_string);
+float runge_kutta(float cur_val, float cur_dxdt, float pre_dxdt, float pre2_dxdt, float dt)
+{
+	return cur_val + dt/6*(pre2_dxdt + 4*pre_dxdt + cur_dxdt);
+}
 
 setup_status_t setup()
 {
@@ -120,12 +128,15 @@ int main()
 	position_t position = {.x = 0, .y = 0, .z = 0};
 	float delta_time_gyro = 0.000125;		//8kSps for gyro
 	float delta_time_accel = 0.001;		//1kSps for accel
-	float euler_rate_phi_cur = 0, euler_rate_theta_cur = 0, euler_rate_psi_cur = 0;	//euler rates of current sample
-	float euler_rate_phi_pre = 0, euler_rate_theta_pre = 0, euler_rate_psi_pre = 0;	//euler rates of previous sample
-	float abs_accel_x_cur = 0, abs_accel_y_cur = 0, abs_accel_z_cur = 0;	//absolute acceleration of current sample
-	float abs_accel_x_pre = 0, abs_accel_y_pre = 0, abs_accel_z_pre = 0;	//absolute acceleration of previous sample
-	float velocity_x_cur = 0, velocity_y_cur = 0, velocity_z_cur = 0;	//current velocities in the cardinal directions
-	float velocity_x_pre = 0, velocity_y_pre = 0, velocity_z_pre = 0;	//previous velocities in the cardinal directions
+	float euler_rate_phi[3] = {0,0,0};
+	float euler_rate_theta[3] = {0,0,0};
+	float euler_rate_psi[3] = {0,0,0};
+	float accel_x[3] = {0,0,0};
+	float accel_y[3] = {0,0,0};
+	float accel_z[3] = {0,0,0};
+	float velocity_x[3] = {0,0,0};
+	float velocity_y[3] = {0,0,0};
+	float velocity_z[3] = {0,0,0};
 	double time_cur = 0, time_pre_gyro = 0, time_pre_accel = 0;	//time calculations
 	struct { float x; float y; float z; } gravity_vector =
 	{
@@ -180,6 +191,8 @@ int main()
 					   xil_printf("Prefix = 0xD0D0CAFE\r\n");
 					   printfloat_data("Position: ", position.x, position.y, position.z, "");
 					   printfloat_data("Rotation: ", orientation.theta, orientation.phi, orientation.psi,"\r\n");
+//					   printfloat_data("rates: ", euler_rate_phi_cur, euler_rate_theta_cur, euler_rate_psi_cur, "\r\n");
+//					   xil_printf("%d", delta_time_gyro * 1000000);
 				#else
 					   uint8_t data[sizeof(PREFIX) + sizeof(position) + sizeof(orientation)] = { PREFIX >> 24, PREFIX >> 16, PREFIX >> 8, PREFIX };
 					   memcpy(data + sizeof(PREFIX), &position, sizeof(position));
@@ -192,38 +205,40 @@ int main()
 
 			//run algorithm calculations
 			//convert accelerations to be relative to gravity
-			abs_accel_x_cur = 	body_acceleration.x * (cos(orientation.phi))
+			accel_x[0] = 	body_acceleration.x * (cos(orientation.phi))
 								+ body_acceleration.z * (sin(orientation.psi));
 
-			abs_accel_y_cur =	body_acceleration.x * (sin(orientation.phi))
+			accel_y[0] =	body_acceleration.x * (sin(orientation.phi))
 								+ body_acceleration.y * (cos(orientation.theta));
 
-			abs_accel_z_cur =	body_acceleration.y * (sin(orientation.theta))
+			accel_z[0] =	body_acceleration.y * (sin(orientation.theta))
 								+ body_acceleration.z * (cos(orientation.psi));
 
 			//subtract gravity from the acceleration
-			abs_accel_x_cur -= gravity_vector.x;
-			abs_accel_y_cur -= gravity_vector.y;
-			abs_accel_z_cur -= gravity_vector.z;
+			accel_x[0] -= gravity_vector.x;
+			accel_y[0] -= gravity_vector.y;
+			accel_z[0] -= gravity_vector.z;
 
 			//integrate to get new velocity
-			velocity_x_cur += ( (abs_accel_x_cur + abs_accel_x_pre)/2 ) * delta_time_accel;
-			velocity_y_cur += ( (abs_accel_y_cur + abs_accel_y_pre)/2 ) * delta_time_accel;
-			velocity_z_cur += ( (abs_accel_z_cur + abs_accel_z_pre)/2 ) * delta_time_accel;
+			velocity_x[0] = runge_kutta(velocity_x[0], accel_x[0], accel_x[1], accel_x[2], 2*delta_time_accel);
+			velocity_y[0] = runge_kutta(velocity_y[0], accel_y[0], accel_y[1], accel_y[2], 2*delta_time_accel);
+			velocity_z[0] = runge_kutta(velocity_z[0], accel_z[0], accel_z[1], accel_z[2], 2*delta_time_accel);
 
 			//integrate to get new position
-			position.x += ( (velocity_x_cur + velocity_x_pre)/2 ) * delta_time_accel;
-			position.y += ( (velocity_y_cur + velocity_y_pre)/2 ) * delta_time_accel;
-			position.z += ( (velocity_z_cur + velocity_z_pre)/2 ) * delta_time_accel;
+			position.x = runge_kutta(position.x, velocity_x[0], velocity_x[1], velocity_x[2], 2*delta_time_accel);
+			position.y = runge_kutta(position.y, velocity_y[0], velocity_y[1], velocity_y[2], 2*delta_time_accel);
+			position.z = runge_kutta(position.z, velocity_z[0], velocity_z[1], velocity_z[2], 2*delta_time_accel);
 
 			//make current samples the previous samples in anticipation of the next loop
-			velocity_x_pre = velocity_x_cur;
-			velocity_y_pre = velocity_y_cur;
-			velocity_z_pre = velocity_z_cur;
-
-			abs_accel_x_pre = abs_accel_x_cur;
-			abs_accel_y_pre = abs_accel_y_cur;
-			abs_accel_z_pre = abs_accel_z_cur;
+			for (int i = 1; i < 3; i++)
+			{
+				velocity_x[i] = velocity_x[i-1];
+				velocity_y[i] = velocity_y[i-1];
+				velocity_z[i] = velocity_z[i-1];
+				accel_x[i] = accel_x[i-0];
+				accel_y[i] = accel_y[i-0];
+				accel_z[i] = accel_z[i-0];
+			}
 
 			time_pre_accel = time_cur;
 		}
@@ -234,29 +249,31 @@ int main()
 		//phi -> angle between x and y
 		//theta -> angle between x and z
 		//psi -> angle between y and z
-		euler_rate_phi_cur = 	body_rates.x
+		euler_rate_phi[0] = 	body_rates.x
 								+ body_rates.y*(sinf(orientation.phi))*(tanf(orientation.theta))
 								+ body_rates.z*(cosf(orientation.phi))*(tanf(orientation.theta));
 
-		euler_rate_theta_cur = 	body_rates.y*(cos(orientation.phi))
-								- body_rates.z*(sin(orientation.phi));
+		euler_rate_theta[0] = 	body_rates.y*(cosf(orientation.phi))
+								- body_rates.z*(sinf(orientation.phi));
 
-		euler_rate_psi_cur = 	body_rates.y*((sin(orientation.phi))/(cos(orientation.theta)))
-								+ body_rates.z*((cos(orientation.phi))/(cos(orientation.theta)));
+		euler_rate_psi[0] = 	body_rates.y*((sinf(orientation.phi))/(cosf(orientation.theta)))
+								+ body_rates.z*((cosf(orientation.phi))/(cosf(orientation.theta)));
 
 		//calculate new orientation from euler rates
-		//new theta = old theta + euler rate theta * dt
-		orientation.theta 	+= ( euler_rate_theta_cur ) 	* delta_time_gyro;
-		orientation.phi 	+= ( euler_rate_phi_cur ) 		* delta_time_gyro;
-		orientation.psi		+= ( euler_rate_psi_cur ) 		* delta_time_gyro;
+		orientation.theta = 	runge_kutta(orientation.theta, euler_rate_theta[0], euler_rate_theta[1], euler_rate_theta[2], delta_time_gyro*2);
+		orientation.phi = 		runge_kutta(orientation.phi, euler_rate_phi[0], euler_rate_phi[1], euler_rate_phi[2], delta_time_gyro*2);
+		orientation.psi = 		runge_kutta(orientation.psi, euler_rate_psi[0], euler_rate_psi[1], euler_rate_psi[2], delta_time_gyro*2);
 
 		//make current samples the previous samples in anticipation of the next loop
-		euler_rate_theta_pre = euler_rate_theta_cur;
-		euler_rate_phi_pre = euler_rate_phi_cur;
-		euler_rate_psi_pre = euler_rate_psi_cur;
+		for (int i = 1; i < 3; i++)
+		{
+			euler_rate_phi[i] = euler_rate_phi[i-1];
+			euler_rate_psi[i] = euler_rate_psi[i-1];
+			euler_rate_theta[i] = euler_rate_theta[i-1];
+		}
 
 		if (counter >= 10000) { counter = 0; } else { counter++; };
-		//usleep(125); //0.125 ms per loop (yes this is inaccurate but we didn't have enough time to get timers working so heck you)
+		usleep(125); //0.125 ms per loop (yes this is inaccurate but we didn't have enough time to get timers working so heck you)
 		time_pre_gyro = time_cur;
 	}
 	return 0;
