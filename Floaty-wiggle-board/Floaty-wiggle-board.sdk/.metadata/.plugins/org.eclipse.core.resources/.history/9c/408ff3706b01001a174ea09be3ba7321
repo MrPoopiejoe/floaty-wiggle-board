@@ -4,7 +4,6 @@
  *  Created on: Oct 21, 2019
  *      Author: PoopieJoe
  */
-// Dit werkt :) weer, hoera !!!!!
 
 #include <stdio.h>
 #include <math.h>
@@ -189,20 +188,9 @@ int main()
 				//output stuff to console
 
 				#if ASCII_DATA == 2
-//				      accel_x[0] = 1.12;
-//				      accel_y[0] = 3.333;
-//				      accel_z[0] = -2.00;
-//
-//				      body_rates.x = -4.111;
-//				      body_rates.y = 0;
-//				      body_rates.z = 13;
-
-
-
-
 					   xil_printf("Prefix = 0xD0D0CAFE\r\n");
-					   printfloat_data(",", accel_x[0], accel_y[0], accel_z[0], "");
-					   printfloat_data(",", body_rates.x, body_rates.y, body_rates.z, ",\r\n");
+					   printfloat_data("pos: ", accel_x[0], accel_y[0], accel_z[0], "");
+					   printfloat_data("orien: ", body_rates.x, body_rates.y, body_rates.z, ",\r\n");
 //					   printfloat_data("rates: ", euler_rate_phi_cur, euler_rate_theta_cur, euler_rate_psi_cur, "\r\n");
 //					   xil_printf("%d", delta_time_gyro * 1000000);
 				#else
@@ -359,47 +347,22 @@ gyroreading_t convert_gyroreading( gyroreading_raw_t reading )
 	return result;
 }
 
-void printfloat1(float data_float)
-{
-	float data = data_float;
-
-	//xil_printf("Hoi %d  %d %d\r\n", (int) (data*DIGITS), (int_part*DIGITS), (data*DIGITS)-(int_part*DIGITS));
-	char signed_num;
-
-	if(data<0)
-	{
-		data = data * -1;
-		signed_num=1;
-	}
-	else
-	{
-		signed_num = 0;
-	}
-
-	int int_part= (int)data;
-	//xil_printf("%d\r\n", int_part);
-	int dec_part = (data*DIGITS) - (int_part*DIGITS);
-
-	if(signed_num) //Negative
-	{
-		xil_printf("-%d.%03d", int_part, dec_part);
-	}
-	else
-	{
-		xil_printf(" %d.%03d", int_part, dec_part);
-	}
-}
-
-
 void printfloat_data(char* pre_string, float data1, float data2, float data3, char* post_string)
 {
-	xil_printf("%s", pre_string);
-	printfloat1(data1);
-	xil_printf(", ");
-	printfloat1(data2);
-	xil_printf(", ");
-	printfloat1(data3);
-	xil_printf("%s", post_string);
+	int data[6];
+
+	data[0] = (int)data1;
+	data[1] = (data1 - data[0]) * DIGITS;
+	data[2] = (int)data2;
+	data[3] = (data2 - data[2]) * DIGITS;
+	data[4] = (int)data3;
+	data[5] = (data3 - data[4]) * DIGITS;
+
+	if (data[1] < 0) data[1] = -1*data[1];
+	if (data[3] < 0) data[3] = -1*data[3];
+	if (data[5] < 0) data[5] = -1*data[5];
+
+	xil_printf("%s%d.%03d, %d.%03d, %d.%03d%s \r\n", pre_string, data[0], data[1], data[2], data[3], data[4], data[5], post_string);
 }
 
 void send_data(uint8_t * data, uint16_t len)
@@ -421,7 +384,13 @@ void send_data(uint8_t * data, uint16_t len)
 
 }
 
-
+//int send_cords(cords_t *cords_p)
+//{
+//	uint8_t data[sizeof(PREFIX)+sizeof(cords_t)]={PREFIX>>24, PREFIX>>16, PREFIX>>8, PREFIX};
+//	memcpy(data+sizeof(PREFIX), cords_p, sizeof(cords_t));
+//	send_data(data, sizeof(PREFIX)+sizeof(cords_t));
+//	return 0;
+//}
 void delay_ms(uint32_t ms)
 {
 	usleep(ms*1000);

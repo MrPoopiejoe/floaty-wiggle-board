@@ -4,7 +4,6 @@
  *  Created on: Oct 21, 2019
  *      Author: PoopieJoe
  */
-// Dit werkt :) weer, hoera !!!!!
 
 #include <stdio.h>
 #include <math.h>
@@ -189,17 +188,6 @@ int main()
 				//output stuff to console
 
 				#if ASCII_DATA == 2
-//				      accel_x[0] = 1.12;
-//				      accel_y[0] = 3.333;
-//				      accel_z[0] = -2.00;
-//
-//				      body_rates.x = -4.111;
-//				      body_rates.y = 0;
-//				      body_rates.z = 13;
-
-
-
-
 					   xil_printf("Prefix = 0xD0D0CAFE\r\n");
 					   printfloat_data(",", accel_x[0], accel_y[0], accel_z[0], "");
 					   printfloat_data(",", body_rates.x, body_rates.y, body_rates.z, ",\r\n");
@@ -368,7 +356,7 @@ void printfloat1(float data_float)
 
 	if(data<0)
 	{
-		data = data * -1;
+		data = ! data;
 		signed_num=1;
 	}
 	else
@@ -380,16 +368,39 @@ void printfloat1(float data_float)
 	//xil_printf("%d\r\n", int_part);
 	int dec_part = (data*DIGITS) - (int_part*DIGITS);
 
-	if(signed_num) //Negative
+	/*if (dec_part<0)
 	{
-		xil_printf("-%d.%03d", int_part, dec_part);
+		dec_part=!dec_part;
+	}*/
+if(signed_num) //Negative
+	if(dec_part<10)
+	{
+		xil_printf("-%d.00%d", int_part, dec_part);
+	}
+	else if(dec_part<100)
+	{
+		xil_printf("-%d.0%d", int_part, dec_part);
 	}
 	else
 	{
-		xil_printf(" %d.%03d", int_part, dec_part);
+		xil_printf("-%d.%d", int_part, dec_part);
+	}
+else //Positive
+{
+	if(dec_part<10)
+	{
+		xil_printf("%d.00%d", int_part, dec_part);
+	}
+	else if(dec_part<100)
+	{
+		xil_printf("%d.0%d", int_part, dec_part);
+	}
+	else
+	{
+		xil_printf("%d.%d", int_part, dec_part);
 	}
 }
-
+}
 
 void printfloat_data(char* pre_string, float data1, float data2, float data3, char* post_string)
 {

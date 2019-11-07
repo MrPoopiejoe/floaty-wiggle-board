@@ -4,7 +4,6 @@
  *  Created on: Oct 21, 2019
  *      Author: PoopieJoe
  */
-// Dit werkt :) weer, hoera !!!!!
 
 #include <stdio.h>
 #include <math.h>
@@ -189,13 +188,12 @@ int main()
 				//output stuff to console
 
 				#if ASCII_DATA == 2
-//				      accel_x[0] = 1.12;
-//				      accel_y[0] = 3.333;
-//				      accel_z[0] = -2.00;
-//
-//				      body_rates.x = -4.111;
-//				      body_rates.y = 0;
-//				      body_rates.z = 13;
+				      accel_x[0] = 1.12;
+				      accel_z[0] = -2.00;
+				      accel_y[0] = 3.333;
+				      body_rates.x = -4.111;
+				      body_rates.y = 0;
+				      body_rates.z = 13;
 
 
 
@@ -368,7 +366,7 @@ void printfloat1(float data_float)
 
 	if(data<0)
 	{
-		data = data * -1;
+		data = ! data;
 		signed_num=1;
 	}
 	else
