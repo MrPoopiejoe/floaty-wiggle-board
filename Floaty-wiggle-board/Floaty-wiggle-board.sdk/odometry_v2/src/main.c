@@ -189,9 +189,11 @@ int main()
 
 				#if ASCII_DATA == 2
 					   xil_printf("Prefix = 0xD0D0CAFE\r\n");
-					   printfloat_data("Position: ", position.x, position.y, position.z, "");
-					   printfloat_data("Rotation: ", orientation.theta, orientation.phi, orientation.psi,"\r\n");
-//					   printfloat_data("rates: ", euler_rate_phi_cur, euler_rate_theta_cur, euler_rate_psi_cur, "\r\n");
+//					   printfloat_data("pos: ", accel_x[0], accel_y[0], accel_z[0], "");
+					   printfloat_data("orientation: ", orientation.phi, orientation.theta, orientation.psi, "");
+					   printfloat_data("euler rates: ", euler_rate_phi[0], euler_rate_theta[0], euler_rate_psi[0], "");
+					   printfloat_data("body rates: ", body_rates.x, body_rates.y, body_rates.z, "");
+
 //					   xil_printf("%d", delta_time_gyro * 1000000);
 				#else
 					   uint8_t data[sizeof(PREFIX) + sizeof(position) + sizeof(orientation)] = { PREFIX >> 24, PREFIX >> 16, PREFIX >> 8, PREFIX };
@@ -202,6 +204,10 @@ int main()
 			}
 			//@1kHz
 			body_acceleration = convert_accelreading(mpu6050_readaccel());
+
+			orientation.phi = 0;
+			orientation.theta = 0;
+			orientation.psi = 0;
 
 			//run algorithm calculations
 			//convert accelerations to be relative to gravity
@@ -246,9 +252,9 @@ int main()
 		//run algorithm calculations
 
 		//convert body rates to euler rates
-		//phi -> angle between x and y
-		//theta -> angle between x and z
-		//psi -> angle between y and z
+		//phi -> roll :	 	0 - 2pi
+		//theta -> pitch : 	-pi - pi
+		//psi -> yaw : 0 - 2pi
 		euler_rate_phi[0] = 	body_rates.x
 								+ body_rates.y*(sinf(orientation.phi))*(tanf(orientation.theta))
 								+ body_rates.z*(cosf(orientation.phi))*(tanf(orientation.theta));
@@ -260,9 +266,21 @@ int main()
 								+ body_rates.z*((cosf(orientation.phi))/(cosf(orientation.theta)));
 
 		//calculate new orientation from euler rates
+//		orientation.theta += euler_rate_theta[0]*delta_time_gyro;
+//		orientation.phi += euler_rate_phi[0]*delta_time_gyro;
+//		orientation.psi += euler_rate_psi[0]*delta_time_gyro;
+
+
 		orientation.theta = 	runge_kutta(orientation.theta, euler_rate_theta[0], euler_rate_theta[1], euler_rate_theta[2], delta_time_gyro*2);
 		orientation.phi = 		runge_kutta(orientation.phi, euler_rate_phi[0], euler_rate_phi[1], euler_rate_phi[2], delta_time_gyro*2);
 		orientation.psi = 		runge_kutta(orientation.psi, euler_rate_psi[0], euler_rate_psi[1], euler_rate_psi[2], delta_time_gyro*2);
+
+		orientation.phi = fmod(orientation.phi, 2*M_PI);
+		orientation.psi = fmod(orientation.psi, 2*M_PI);
+		orientation.theta = (fmod(orientation.theta + M_PI/2, M_PI))-(M_PI/2);
+
+		if (orientation.phi < 0) orientation.phi += 2*M_PI;
+		if (orientation.psi < 0) orientation.psi += 2*M_PI;
 
 		//make current samples the previous samples in anticipation of the next loop
 		for (int i = 1; i < 3; i++)
@@ -357,7 +375,12 @@ void printfloat_data(char* pre_string, float data1, float data2, float data3, ch
 	data[3] = (data2 - data[2]) * DIGITS;
 	data[4] = (int)data3;
 	data[5] = (data3 - data[4]) * DIGITS;
-	xil_printf("%s(%d.%d, %d.%d, %d.%d)%s \r\n", pre_string, data[0], data[1], data[2], data[3], data[4], data[5], post_string);
+
+	if (data[1] < 0) data[1] = -1*data[1];
+	if (data[3] < 0) data[3] = -1*data[3];
+	if (data[5] < 0) data[5] = -1*data[5];
+
+	xil_printf("%s%d.%03d, %d.%03d, %d.%03d%s \r\n", pre_string, data[0], data[1], data[2], data[3], data[4], data[5], post_string);
 }
 
 void send_data(uint8_t * data, uint16_t len)
